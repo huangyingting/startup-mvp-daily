@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-06",
+  "slug": "afterclass-radar",
+  "title": "AfterClass Radar",
+  "tagline": "把课后项目的报名、出勤、安全与家长沟通，收束成一个每天可执行的运营驾驶舱。",
+  "category": "Education / Operations / Vertical AI",
+  "potential_score": 85,
+  "summary": "Arly 发布了面向课后项目、夏令营与青少年服务机构的 AI-embedded 管理平台，说明这个长期依赖表格、纸质记录和短信协作的行业，正在进入『可被上下文感知型 AI 重做』的窗口期。真正值得下注的，不一定是再做一个大而全系统，而是先做一个让一线主管每天少掉 30 分钟协调成本的运营层。",
+  "why_now": "新闻里最关键的不是『AI』两个字，而是 Arly 把报名、支付、安全、成果跟踪、移动端和操作日志重新做了一遍，并强调 AI 是嵌进工作流里的。这说明市场已经接受：青少年项目运营不是文档管理问题，而是高频、现场、多人协同的实时决策问题。对中小型机构来说，一个更轻、更快上线的日常运营台，比完整替换核心系统更容易成交。",
+  "creative_edge": "MVP 不去复制完整的 program management suite，而是切『今天会出什么问题』这个更高频的切口：谁没到岗、谁的接送授权有风险、哪条家长通知要现在发、哪项资助记录还没补齐。这样更像一个运营指挥台，而不是又一个难部署的后台。",
+  "problem": "大量课后项目、夏令营和社区青少年服务机构，仍用 Google Sheets、短信群、纸质签字和经验型主管来维持现场运转。问题不是他们不知道该做什么，而是每天要在报名、出勤、安全、家长沟通、资助合规和 staff handoff 之间频繁切换，导致错误、遗漏和响应延迟不断累积。",
+  "mvp_thesis": "如果一个轻量 AI 运营层能在每天开班前告诉主管『今天最需要处理的 5 件事』，并自动生成对 staff 与家长的可执行动作，中小型 youth programs 会在不替换核心系统的前提下先买单。",
+  "source": {
+    "title": "Arly Launches First AI-Embedded Platform for Youth Program Management",
+    "url": "https://www.prnewswire.com/news-releases/arly-launches-first-ai-embedded-platform-for-youth-program-management-302733138.html",
+    "publisher": "PR Newswire",
+    "published": "2026-04-02"
+  },
+  "news_signals": [
+    "Arly 明确把自己定位为面向 afterschool programs、summer camps 与 youth-serving organizations 的 AI-embedded 平台，说明这个垂直市场已经值得专门重做。",
+    "官方强调 AI 不是外挂聊天框，而是嵌进 enrollment、safety、family communication、outcomes 等工作流里，验证了『上下文感知运营 AI』的产品方向。",
+    "发布内容里同时突出 mobile、audit trail、Name-to-Face verification、one-time-code check-in/out，说明这个市场的核心痛点是现场执行而不是单纯报表。",
+    "平台 built from the ground up 的叙事意味着旧系统很难优雅承载新需求，中小团队更可能先接受一个轻量前置运营层。"
+  ],
+  "audiences": [
+    "20-200 人规模的课后项目与社区学习中心负责人",
+    "需要处理签到签退、安全记录与家长沟通的 summer camp / youth program 运营主管",
+    "同时面对资助方、学区或基金会汇报要求的非营利教育组织"
+  ],
+  "features": [
+    {
+      "name": "今日运营雷达",
+      "description": "把出勤缺口、师生配比风险、缺失授权、迟到 staff、待发送通知汇总成一个开班前优先级清单，让主管先处理最可能出事故或影响体验的事项。"
+    },
+    {
+      "name": "家长沟通工坊",
+      "description": "针对晚接、天气变更、活动取消、轻微事件跟进等场景，自动生成多语言家长消息，保留可编辑模板与发送记录。"
+    },
+    {
+      "name": "安全与交接助手",
+      "description": "遇到接送授权不匹配、签到异常或现场事件时，系统弹出逐步处理剧本，要求记录时间、责任人、通知对象和闭环状态。"
+    },
+    {
+      "name": "资助证据包",
+      "description": "把活动参与、出勤趋势、成果观察与事件记录整理成可导出的周报/项目证明，减少对外汇报前的手工拼表时间。"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "开班前 15 分钟巡检",
+      "hook": "主管不用再翻 4 个表和 2 个群，先看今天最危险的运营缺口。",
+      "workflow": [
+        "导入当天 roster、staff 排班与签到状态",
+        "系统自动标记师生配比不足、缺失授权、迟到人员与未完成通知",
+        "主管一键生成待办清单并分配给现场 staff"
+      ],
+      "metric": "开班前关键问题关闭率 / 首小时运营中断数"
+    },
+    {
+      "name": "接送异常处理",
+      "hook": "当接送人不在授权名单或家长迟迟未到时，用标准化剧本避免靠经验硬扛。",
+      "workflow": [
+        "前台记录异常并触发对应处理模板",
+        "系统生成给家长/紧急联系人的消息草稿与内部升级步骤",
+        "事件结束后自动沉淀为可追溯日志"
+      ],
+      "metric": "交接事件平均处理时长 / 家长确认率"
+    },
+    {
+      "name": "向资助方交周报",
+      "hook": "把『本周做了什么、谁参与了、有哪些成果』从拼表劳动变成自动成稿。",
+      "workflow": [
+        "聚合一周出勤、活动标签、家长反馈与事件摘要",
+        "系统生成适合学区或基金会阅读的周报结构与 narrative",
+        "导出 PDF/链接供负责人复核发送"
+      ],
+      "metric": "周报准备时长 / 续约或资助通过率"
+    }
+  ],
+  "stack": [
+    "静态 HTML / CSS / JavaScript 先把运营台的信息结构与购买故事讲清楚",
+    "Supabase 或 Firebase 存 roster、attendance、incident log 与 message templates",
+    "CSV 导入 + Google Sheets 同步，兼容中小机构现有工作流",
+    "Twilio / SendGrid / WhatsApp API 负责家长通知与确认回执",
+    "LLM 只做任务排序、消息起草和周报生成，把高风险决策留给人工确认"
+  ],
+  "risks": [
+    "涉及未成年人数据与安全事件，隐私、审计与权限模型必须从第一天设计清楚。",
+    "非营利教育组织预算有限，必须先证明节省时间与降低事件响应成本，而不是卖『AI 很先进』。",
+    "如果不能接进现有签到、支付或 SIS 系统，团队很可能嫌切换成本过高。",
+    "安全场景里 AI 只能做辅助，不能给人一种可以替代现场判断的错觉。"
+  ],
+  "next_steps": [
+    "先让机构上传一周 roster 与签到表，直接生成『明天开班风险板』验证第一眼价值。",
+    "增加家长确认链接与多语言模板，跑通晚接/活动变更这类高频通知闭环。",
+    "做一个可配置的资助周报导出器，让负责人看到真实节省的后台时间。",
+    "找 2 家课后项目和 1 家夏令营做 14 天试点，记录每天节省的协调时间与异常处理速度。"
+  ]
+}
