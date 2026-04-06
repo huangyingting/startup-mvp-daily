@@ -1,0 +1,100 @@
+[
+  {
+    "date": "2026-04-06",
+    "slug": "characterlab",
+    "title": "CharacterLab",
+    "tagline": "把 Runway 的实时视频角色能力，压缩成一个可立即验证需求的角色产品工作台。",
+    "category": "AI / Media / World Models",
+    "potential_score": 89,
+    "summary": "Runway 不只是在做 AI 视频生成，还启动了 1000 万美元基金和 Builders 计划，鼓励创业团队围绕实时角色与世界模型做产品。这意味着 '角色即界面' 可能成为一波新的应用层机会。",
+    "why_now": "当模型层开始给出实时视频角色、API 积分和生态扶持时，真正稀缺的不再是底模，而是最快把行业场景包装成可卖产品的人。CharacterLab 就是一个把这个窗口期变成具体原型的入口。",
+    "creative_edge": "MVP 不直接再做一个视频生成器，而是帮助团队先把角色体验、使用场景、转化指标和上线路径结构化出来，降低从新闻灵感到真实产品验证之间的摩擦。",
+    "problem": "很多团队看到了 AI 角色、互动品牌角色、教育陪练、远程销售助手的机会，但没有一个足够轻量的方式把 idea 在一天内变成能给用户和投资人看的产品结构。",
+    "mvp_thesis": "先让创始人用三分钟拼出一个可以讲清楚价值的角色型产品，再决定是否接入真正的模型和 API。",
+    "source": {
+      "title": "Exclusive: Runway launches $10M fund, Builders program to support early-stage AI startups",
+      "url": "https://techcrunch.com/2026/03/31/exclusive-runway-launches-10m-fund-builders-program-to-support-early-stage-ai-startups/",
+      "publisher": "TechCrunch",
+      "published": "2026-03-31"
+    },
+    "news_signals": [
+      "Runway 推出 1000 万美元 fund，说明它希望应用层创业者在它的模型之上长出来。",
+      "Builders 计划直接给 500,000 API credits，意味着早期实验成本下降。",
+      "文章明确提到 education、telemedicine、brand characters 等多垂直场景，应用空间非常宽。",
+      "从『视频生成』到『实时、沉浸式、可交互世界模型』的叙事升级，给产品设计留出了新入口。"
+    ],
+    "audiences": [
+      "要做 AI 角色产品但还没把 use case 讲清楚的创业者",
+      "需要快速给客户做概念验证的创意代理商与产品团队",
+      "教育、医疗、客户成功团队里想先验证体验闭环的人"
+    ],
+    "features": [
+      {
+        "name": "角色定位器",
+        "description": "输入行业、用户、角色语气和目标动作，立即得到角色价值主张与一句话定位。"
+      },
+      {
+        "name": "体验流生成器",
+        "description": "把首次打开、互动节点、CTA 和成功指标整理成一条可展示的体验链路。"
+      },
+      {
+        "name": "场景切换面板",
+        "description": "同一个技术能力，可在 onboarding、sales、education、telehealth 等场景之间切换，快速看哪里最值得先试。"
+      },
+      {
+        "name": "上线准备清单",
+        "description": "自动给出接 API、采集反馈、定义北极星指标和下一步实验的最小执行框架。"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "品牌 onboarding 角色",
+        "hook": "把冷冰冰的新手引导，变成一个会对话、会提问、会推动激活的角色体验。",
+        "workflow": [
+          "用户输入品牌类型与核心转化动作",
+          "系统组合欢迎语、关键提问和首个 aha moment",
+          "输出可直接给设计师与开发的 onboarding storyboard"
+        ],
+        "metric": "首日激活率 / onboarding 完成率"
+      },
+      {
+        "name": "教育陪练角色",
+        "hook": "针对语言学习或职业训练，先设计互动陪练的教学节奏，而不是先堆模型。",
+        "workflow": [
+          "选择学习目标与用户水平",
+          "生成陪练角色的激励机制、纠错时机与回访节点",
+          "输出一页式 MVP 教学脚本"
+        ],
+        "metric": "7 日留存 / 完课率"
+      },
+      {
+        "name": "销售预演角色",
+        "hook": "让销售团队先用角色 AI 预演客户沟通脚本，验证是否真能提高转化。",
+        "workflow": [
+          "配置行业、客单价和典型 objection",
+          "生成多轮对话结构与升级路径",
+          "导出 demo 给销售负责人试用"
+        ],
+        "metric": "预约率 / demo 到成交转化"
+      }
+    ],
+    "stack": [
+      "静态 HTML / CSS / JavaScript，零后端即可上线演示",
+      "结构化 JSON 内容模型，方便每日新增一个项目文件",
+      "Python 构建脚本自动生成首页、项目页与 feed.json",
+      "GitHub Pages 托管 docs 目录，push 后自动发布"
+    ],
+    "risks": [
+      "角色类产品容易沦为炫技 demo，需要尽快绑定明确业务指标。",
+      "如果没有真实的模型/API 接入，交互上限会很快遇到天花板。",
+      "内容创意和产品结构虽然能快，但分发与客户教育仍然是主难点。"
+    ],
+    "next_steps": [
+      "接入真实表单，让用户能把角色配置导出成 JSON 或 Notion brief。",
+      "为每个行业提供 3-5 个预置模板，降低首次使用成本。",
+      "追加一个『验证仪表盘』，记录团队是否真的开始联系用户、做测试、收反馈。",
+      "如果继续迭代，再接入 Runway 或其他实时角色 API 做真正可交互 demo。"
+    ],
+    "_source_file": "2026-04-06-characterlab.json"
+  }
+]
