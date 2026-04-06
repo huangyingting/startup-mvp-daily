@@ -27,7 +27,7 @@ def load_projects() -> list[dict[str, Any]]:
         data = json.loads(path.read_text(encoding="utf-8"))
         data["_source_file"] = path.name
         projects.append(data)
-    projects.sort(key=lambda item: item["date"], reverse=True)
+    projects.sort(key=lambda item: (item["date"], item.get("_source_file", "")), reverse=True)
     return projects
 
 
