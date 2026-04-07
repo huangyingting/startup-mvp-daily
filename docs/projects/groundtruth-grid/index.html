@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GroundTruth Grid · Startup MVP Daily</title>
+    <meta name="description" content="把卫星与地图数据变成企业每天能执行的资产、工地与供应链变化雷达。" />
+    <meta property="og:title" content="GroundTruth Grid · Startup MVP Daily" />
+    <meta property="og:description" content="把卫星与地图数据变成企业每天能执行的资产、工地与供应链变化雷达。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://huangyingting.github.io/startup-mvp-daily/projects/groundtruth-grid/" />
+    <link rel="canonical" href="https://huangyingting.github.io/startup-mvp-daily/projects/groundtruth-grid/" />
+    <link rel="stylesheet" href="/startup-mvp-daily/assets/styles.css" />
+  </head>
+  <body>
+    
+    <main class="page-shell">
+      <a class="top-link" href="/startup-mvp-daily/">← 返回首页</a>
+      <section class="hero-card hero-card--project">
+        <p class="eyebrow">2026-04-07 · Geospatial AI / Enterprise Operations / Climate</p>
+        <h1>GroundTruth Grid</h1>
+        <p class="lede">把卫星与地图数据变成企业每天能执行的资产、工地与供应链变化雷达。</p>
+        <div class="score-pill">潜力评分 90/100</div>
+        <div class="hero-grid">
+          <article>
+            <p class="label">新闻来源</p>
+            <h2>Spain&#x27;s Xoople raises $130 million Series B to map the Earth for AI</h2>
+            <p>Xoople 融资 1.3 亿美元去做面向 AI 的高质量地球观测数据，并且在自有卫星尚未全面上线前，就先把分发能力嵌进 Microsoft 与 Esri 生态。这说明真正有机会的，不只是再做一家卖遥感数据的公司，而是做一层把『地表变化』直接翻译成企业运营动作的应用软件。</p>
+            <a class="inline-link" href="https://techcrunch.com/2026/04/06/spains-xoople-raises-130-million-series-b-to-map-the-earth-for-ai/" target="_blank" rel="noreferrer">查看原文 ↗</a>
+          </article>
+          <article>
+            <p class="label">为什么值得做</p>
+            <p>这条新闻最重要的信号，不是又有一家太空公司融资，而是地理空间 AI 的供给和分发条件已经成熟：公开卫星数据可先用，企业已经在 Microsoft 和 Esri 里工作，基础设施、气候风险与供应链波动又让『定期知道哪里变了』变成刚需。现在最值得切入的，不是造更多地图，而是把变化检测、优先级排序和任务闭环做成业务团队愿意天天打开的操作台。</p>
+            <p class="creative-edge">MVP 不卖原始影像，也不做给 GIS 专家用的复杂分析工作台，而是把产品切成更容易成交的一步：当某个工地、仓库、港口、农场或能源设施发生值得注意的变化时，系统自动告诉运营负责人『哪里变了、为什么要看、下一步该派谁去确认』。这让地理空间 AI 从分析工具变成运营动作引擎。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="section-card">
+          <p class="eyebrow">Problem</p>
+          <h2>要解决什么问题？</h2>
+          <p>大量拥有分布式资产的企业，依然靠人工巡检、微信群、供应商回报和零散报表来判断现场是否按计划推进、是否受天气或施工影响、是否出现异常堆场、停摆或损坏。问题不是没有地图，而是没有一个轻量、持续、能转成任务的系统，把地表变化及时送到对业务结果负责的人手里。</p>
+          <h3>目标用户</h3>
+          <ul class="bullet-list"><li>管理多地工地、仓库、能源设施或交通节点的区域运营负责人</li><li>需要监测灾害影响、施工进度或资产异常的基础设施、物流、保险与能源团队</li><li>已经在用 Esri、Mapbox 或 Microsoft 数据栈，但缺少轻量业务闭环的企业分析与运营团队</li></ul>
+        </article>
+
+        <article class="section-card">
+          <p class="eyebrow">Signals</p>
+          <h2>来自新闻的关键信号</h2>
+          <ul class="bullet-list"><li>Xoople 不只是做卫星，还强调要把数据与解决方案嵌入 Microsoft 和 Esri 生态，说明真正关键的是进入企业已经在使用的工作流。</li><li>公司在自有数据供给完全成型前，就先使用公开数据并铺设分发渠道，证明应用层创业者也能先做产品与市场，再逐步增强数据护城河。</li><li>报道明确提到交通网络、自然灾害损害评估、农作物健康、基础设施项目与供应链监测等场景，说明地理空间 AI 的商业化入口是具体行业任务，而不是通用地图浏览。</li><li>Xoople 想做『Earth&#x27;s System of Record』，这释放了一个强信号：谁先把地表变化和企业决策连接起来，谁就能占据应用层入口。</li></ul>
+        </article>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MVP</p>
+            <h2>这个原型包含什么</h2>
+          </div>
+          <p>如果一个轻量 geospatial AI 产品能先用公开卫星数据和现有地图底图，为 50 到 500 个分布式站点生成『变化优先级列表 + 建议动作 + 可追溯证据』，基础设施、物流与保险等团队会先为这层运营能力买单，而不是先采购更昂贵的原始遥感数据。</p>
+        </div>
+        <div class="card-grid">
+        <article class="info-card">
+          <h3>资产变化雷达</h3>
+          <p>按站点自动对比近 7 天影像、底图与地理边界，标出土方变化、堆场扩张、车辆活跃度变化、植被异常或受灾痕迹，并给出优先级理由。</p>
+        </article>
+        
+        <article class="info-card">
+          <h3>行动派单台</h3>
+          <p>把『看到了什么变化』直接转成巡检、拍照确认、供应商跟进或内部工单，避免洞察停留在分析页面里。</p>
+        </article>
+        
+        <article class="info-card">
+          <h3>证据时间轴</h3>
+          <p>为每个站点保留前后对比图、人工标注、决策记录和处理状态，让团队在复盘、索赔或项目汇报时有统一证据链。</p>
+        </article>
+        
+        <article class="info-card">
+          <h3>行业模板规则库</h3>
+          <p>预置工地进度、灾后普查、港口拥堵、农地异常和能源设施巡检模板，让非 GIS 专家也能快速得到可用结果。</p>
+        </article>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Interactive demo</p>
+            <h2>三种最先能打动市场的使用场景</h2>
+          </div>
+          <p>点击不同场景，查看从体验入口到北极星指标的 MVP 路线。</p>
+        </div>
+        
+    <div class="scenario-shell">
+      <div class="scenario-tabs"><button class="scenario-tab" data-tab-target="#groundtruth-grid-panel-0" aria-pressed="true" id="groundtruth-grid-scenario-0">工地进度变化巡检</button><button class="scenario-tab" data-tab-target="#groundtruth-grid-panel-1" aria-pressed="false" id="groundtruth-grid-scenario-1">灾后资产优先排查</button><button class="scenario-tab" data-tab-target="#groundtruth-grid-panel-2" aria-pressed="false" id="groundtruth-grid-scenario-2">供应链节点异常观察</button></div>
+      <div class="scenario-panels">
+            <section class="scenario-panel" id="groundtruth-grid-panel-0" >
+              <p class="eyebrow">Use case</p>
+              <h3>工地进度变化巡检</h3>
+              <p class="scenario-hook">项目负责人不用等承包商周报，先看到哪些工地进度异常、材料堆放异常或疑似停工。</p>
+              <ul class="workflow-list"><li>导入项目坐标、地块边界与计划里程碑</li><li>系统对比近几期影像并标记土方、结构、堆场与施工活动变化</li><li>负责人审核后生成现场确认任务并同步给项目经理</li></ul>
+              <div class="metric-pill">北极星指标：异常发现提前量 / 每周人工巡检次数节省</div>
+            </section>
+            
+            <section class="scenario-panel" id="groundtruth-grid-panel-1" hidden>
+              <p class="eyebrow">Use case</p>
+              <h3>灾后资产优先排查</h3>
+              <p class="scenario-hook">暴雨、山火或台风后，运营团队先知道哪几个站点最值得优先派人，而不是全量盲查。</p>
+              <ul class="workflow-list"><li>圈定受影响区域并导入资产清单</li><li>系统生成受损概率、可见变化摘要与站点优先级队列</li><li>团队按优先级分派现场核查、保险报案或供应商沟通任务</li></ul>
+              <div class="metric-pill">北极星指标：首轮损失评估时长 / 高优先级站点覆盖率</div>
+            </section>
+            
+            <section class="scenario-panel" id="groundtruth-grid-panel-2" hidden>
+              <p class="eyebrow">Use case</p>
+              <h3>供应链节点异常观察</h3>
+              <p class="scenario-hook">当仓库、港口或转运场出现拥堵、低活跃或异常堆场时，供应链团队能更早介入，而不是等 KPI 滞后暴露。</p>
+              <ul class="workflow-list"><li>选择重点仓库、港口或堆场并设置监控规则</li><li>系统定期输出变化摘要、疑似风险原因与需要确认的问题</li><li>运营人员把异常站点转成补货、改线或供应商核查动作</li></ul>
+              <div class="metric-pill">北极星指标：异常预警提前天数 / 人工监控耗时下降比例</div>
+            </section>
+            </div>
+    </div>
+    
+      </section>
+
+      <section class="content-grid">
+        <article class="section-card">
+          <p class="eyebrow">Stack</p>
+          <h2>当前技术栈</h2>
+          <ul class="bullet-list"><li>静态 HTML / CSS / JavaScript 先把产品叙事、站点场景与价值链路展示清楚</li><li>公开遥感数据源（如 Sentinel-2、Landsat、Copernicus）作为 MVP 初始数据供给</li><li>Mapbox 或 Esri Web SDK 负责地图渲染、站点边界与变化标注展示</li><li>Supabase 存储站点清单、规则配置、任务状态与证据时间轴</li><li>LLM 只负责变化摘要、风险说明和任务建议，不替代底层检测逻辑</li></ul>
+        </article>
+        <article class="section-card">
+          <p class="eyebrow">Risks</p>
+          <h2>主要风险</h2>
+          <ul class="bullet-list"><li>公开卫星数据的分辨率与时效性有限，若选错垂直场景，很容易因为不够及时而失去价值。</li><li>变化检测天然会有误报，必须把人工确认和证据链设计进产品，而不是假装算法永远正确。</li><li>若一开始覆盖太多行业，产品会沦为泛 geospatial 仪表盘，难以打透单一购买场景。</li><li>一旦客户真正依赖结果，后续可能需要更高质量商业遥感数据，单位经济模型要提前验证。</li></ul>
+        </article>
+      </section>
+
+      <section class="section-card">
+        <p class="eyebrow">Next steps</p>
+        <h2>如果继续迭代，接下来做什么</h2>
+        <ul class="bullet-list"><li>先只打一个垂直场景，例如新能源工地、区域仓网或灾后资产普查，把规则和指标打深。</li><li>找 1 到 2 家拥有 50+ 站点的团队做试点，验证是否真能减少盲目巡检与缩短异常响应时间。</li><li>补上邮件、Slack 与工单系统同步，让变化提示真正进入运营团队日常工作流。</li><li>用人工标注回流训练一个行业化变化分类器，把『看到变化』升级为『知道这类变化通常意味着什么』。</li></ul>
+      </section>
+    </main>
+    
+    <script src="/startup-mvp-daily/assets/app.js" defer></script>
+  </body>
+</html>
