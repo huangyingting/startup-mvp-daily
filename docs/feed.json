@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-04-18",
+    "slug": "carefloat",
+    "title": "CareFloat",
+    "tagline": "把入住前资格判断、家属付款承诺、理赔追踪与现金流预警，收束成 senior living 社区每天都会打开的 money-in 控制台。",
+    "category": "Senior Living / Revenue Operations / AI Finance",
+    "potential_score": 91,
+    "summary": "Sunbound 推出了面向 senior living 的 AI-First Revenue OS，并披露其年化支付处理规模已超过 10 亿美元。这条新闻真正释放的机会，不是再做一个养老行业版财务软件，而是做一层更靠近“钱什么时候进来、为什么没进来、要先找谁解决”的运营控制面：让 assisted living 与 skilled nursing 团队，在不增加一线行政负担的前提下，把入住前支付可行性、理赔进度、家属沟通与坏账风险放进同一条连续工作流里。",
+    "why_now": "这件事现在值得做，是因为 senior living 正同时被三股力量挤压。第一，人口老龄化和护理成本上升让社区入住需求与服务复杂度都在增加，但很多机构的收款、理赔和对账流程仍停留在纸质材料、电话追踪、人工表格和支票时代。第二，新闻里明确提到 Sunbound 已把年化支付处理规模推到 10 亿美元以上，并将 AI agents 用于 eligibility checks、claims workflows、family questions 与 cash flow forecasting，说明买方已经不只是想要更好的 dashboard，而是真的愿意把收入流程交给自动化系统接管。第三，养老社区的利润空间普遍不厚，任何一次理赔延误、家属付款失联、入住材料缺失，都会直接压缩现金流并影响照护质量。窗口期就在于：支付基础设施、规则引擎、语音与短信自动化、AI 异常归因，终于成熟到可以把 senior living 的“钱进来”流程做成独立产品层。",
+    "creative_edge": "CareFloat 的切口不是做 another billing system，也不是做泛医疗 RCM，而是把 senior living 最碎、最痛、最容易被忽略的 money-in 工作流做成一个前台化的运营界面。它不从总账、会计凭证或报表汇总切入，而是从社区团队每天真正卡住的动作切：新住户能不能顺利开始付款、这笔应收为什么没到账、家属现在最需要解释什么、哪一批理赔最可能变成坏账、月底现金流会不会断层。这样产品天然站在社区执行层、区域财务负责人、家属支付人和理赔团队之间，先把“入账动作”变得可见、可派单、可预警，再逐步延伸到 working capital 和网络层面的收入优化。",
+    "problem": "今天很多 assisted living 与 skilled nursing 机构最大的收入问题，不是没有会计系统，而是没有一条足够及时、足够清晰、足够可执行的方式，把从入住到收款之间的断点串起来。入住团队通常先收一部分资料，但资格核验、保险覆盖、补充材料、家属账单、月度追款和理赔状态分别散落在不同系统、邮箱线程、电话记录和 Excel 表里。超过一半付款仍依赖支票或人工转账，说明社区不仅慢，而且对“这笔钱现在卡在哪”几乎没有实时可见性。结果是：前台忙着接家属问题，财务忙着追未付款项，管理层月底才发现现金流偏差，而真正的根因——资料缺失、理赔被拒、付款承诺失效、责任归属不清——往往已经拖了两三周。",
+    "mvp_thesis": "如果一个轻量的 senior living revenue cockpit 能在住户入住前就自动检查支付路径可行性，在入住后持续追踪家属付款、理赔状态与异常账龄，并且把最需要人工介入的 case 以任务流方式推给社区和区域团队，那么中型 senior living 运营商会愿意先把它接在现有 billing、EHR 与 payment stack 前面，因为它替代的不是抽象的“财务数字化”，而是社区每天最耗人、最影响现金流、又最缺少统一控制面的那段 money-in 工作。",
+    "source": {
+      "title": "Sunbound Triples Annual Payment Volume to $1B+, Launches Sunbound.ai -- Senior Living's AI-First Revenue OS",
+      "url": "https://www.prnewswire.com/news-releases/sunbound-triples-annual-payment-volume-to-1b-launches-sunboundai--senior-livings-ai-first-revenue-os-302741866.html",
+      "publisher": "PR Newswire",
+      "published": "2026-04-14"
+    },
+    "news_signals": [
+      "Sunbound 把年化支付处理规模推到 10 亿美元以上，说明 senior living 的收入基础设施已经不是纸面痛点，而是有真实交易密度、足以支撑独立 SaaS 层的高价值场景。",
+      "公司没有只强调 AI assistant，而是明确提出 AI-First Revenue OS，释放出一个信号：买方愿意为“让收入流程自动运行”付费，而不是只买分析报表。",
+      "新闻点名 eligibility checks、claims workflows、family questions、payment follow-ups 与 cash flow forecasting，说明该市场的核心机会是把多个原本碎裂的小动作串成一条连续运营链。",
+      "Sunbound 面向 assisted living 与 skilled nursing 两类机构，这些组织通常同时面对 private pay、保险理赔、家属沟通与营运资金压力，天然需要更强的资金流控制面。",
+      "它强调 refined through months of internal use，再对客户 rollout，说明这类高风险收入流程的市场进入方式不是概念 demo，而是先把可靠性跑透再上线。",
+      "在养老行业人手紧张、成本攀升、入住体验又直接影响留存的背景下，任何能减少坏账和追款摩擦的工具，都更容易和经营指标直接挂钩。"
+    ],
+    "audiences": [
+      "管理 5-100 家 assisted living、memory care 或 skilled nursing 社区，需要同时盯入住率、应收账款与现金流安全的区域运营负责人和财务负责人",
+      "负责 resident onboarding、家属账单解释、理赔跟进与逾期追款，但现有流程散落在电话、邮箱和表格里的 community business office manager / revenue cycle lead",
+      "想减少坏账、缩短回款周期、提高入住前支付确定性，又不想替换整套 EHR 或会计系统的中型 senior living 连锁运营商"
+    ],
+    "features": [
+      {
+        "name": "入住前支付闸门",
+        "description": "在住户签约或入住前，自动检查支付责任人、付款方式、保险/理赔路径、押金状态与缺失材料，生成一张可执行的入住财务就绪卡，告诉团队这位住户能否顺利入账、还缺什么、应该先联系谁。"
+      },
+      {
+        "name": "家属账单与承诺轨道",
+        "description": "把每一次账单发送、家属问题、付款承诺、短信提醒和逾期升级记录到同一时间轴里。团队不再只看到“未付款”，而是能看见这笔钱是因为误解、遗忘、争议还是实际支付困难而被卡住。"
+      },
+      {
+        "name": "理赔缺口工作台",
+        "description": "聚合理赔提交、补件、被拒原因、再处理进度和责任归属，按社区、 payer、账龄和金额排序，优先把最容易演变成现金流风险的 case 推到前面。"
+      },
+      {
+        "name": "30 天现金流预警板",
+        "description": "基于入住节奏、应收账龄、理赔状态、家属付款承诺与历史回款速度，生成未来 30 天现金流预测，并指出最值得今天处理的缺口来源：哪几个社区、哪类 payer、哪批住户最可能拉低本月回款。"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "新住户入住前的付款可行性预演",
+        "hook": "很多社区不是在服务开始后才出问题，而是在入住前就没把“谁付、何时付、缺什么材料”讲清楚。",
+        "workflow": [
+          "入住协调员把住户预计入住日期、护理级别、付款责任人、保险信息和押金状态录入 CareFloat",
+          "系统自动判断是 private pay、长期护理保险、混合支付还是高风险 case，并生成缺失材料清单与建议动作",
+          "只有当入住前支付闸门变为绿色，社区才推进正式入住；若为黄色或红色，系统自动创建跟进任务并给家属发送下一步说明"
+        ],
+        "metric": "入住后 14 天内首次应收成功率 / 因财务资料不完整导致的入住延迟比例"
+      },
+      {
+        "name": "区域团队每周清理高风险理赔队列",
+        "hook": "真正拖垮现金流的不是理赔量大，而是没人知道哪一批被拒最该先处理。",
+        "workflow": [
+          "区域 revenue lead 每周打开理赔缺口工作台，查看按金额、账龄和被拒原因排序的待处理队列",
+          "平台把缺少文档、编码争议、资格失效和重复提交等原因自动分组，并把可快速追回的 case 标成高优先级",
+          "团队按建议完成补件、重新提交或升级给外部账单伙伴，系统实时回写状态并更新预计回款时间"
+        ],
+        "metric": "理赔被拒后 7 天内重提率 / 60 天以上应收占比"
+      },
+      {
+        "name": "月底前阻止家属欠款滚成坏账",
+        "hook": "很多欠款并不是家属拒付，而是没人及时解释账单、确认支付计划或发现自动扣款失败。",
+        "workflow": [
+          "CareFloat 在月底前 10 天自动筛出承诺付款未到账、短信无人回复和账单争议未关闭的住户名单",
+          "系统为每个住户生成建议沟通脚本和下一步动作：短信提醒、电话升级、分期方案或主管介入",
+          "业务办公室按优先级处理后，平台将结果映射到未来 30 天现金流预警板，帮助管理层判断是否需要提前准备营运资金"
+        ],
+        "metric": "30 天以上逾期账款回收率 / 坏账率 / 家属账单相关来电平均处理时长"
+      }
+    ],
+    "stack": [
+      "第一阶段先用静态展示页验证 senior living revenue cockpit 的叙事是否足够打动区域运营、business office manager 与养老连锁 CFO，再收集 demo 申请与目标社区数量。",
+      "产品端优先做 Web 控制台，不碰总账与复杂会计凭证，先围绕 resident case、付款责任人、claims task、cash forecast 和 community queue 五个核心对象展开。",
+      "后端可用 Postgres 或 Supabase 存储住户付款档案、账单事件、理赔状态、沟通记录、任务流与预测快照；把多社区数据天然做成分层权限结构。",
+      "AI 层重点负责三件事：把入住资料映射成支付风险判断、把家属沟通和理赔异常转成可执行任务、把回款历史与当前队列转成短周期现金流预测。",
+      "集成层优先连接 payment processor、短信/语音渠道、现有 senior living billing 软件、EHR 导出的入住数据，以及外部 claims/billing partner 的工单入口。",
+      "为了让社区愿意用，交互上必须让前台团队看到的是“今天先处理哪 5 笔最关键的钱”，而不是抽象 BI 图表。"
+    ],
+    "risks": [
+      "不同州、不同 payer 与不同社区运营模型之间差异极大，如果规则引擎一开始覆盖太广，实施复杂度会迅速上升。",
+      "养老机构对家属沟通非常敏感，若自动提醒措辞不当，可能损害住户家庭体验并带来品牌风险。",
+      "如果无法稳定接入现有 billing、EHR 或 claims partner，CareFloat 就容易沦为额外一层手工录入工具。",
+      "现金流预测若经常失准，管理层会迅速丧失信任，因此产品早期必须优先把解释性和误差边界做清楚。",
+      "收入流程牵涉 PHI、付款信息和家庭联系人资料，权限、审计与数据保留策略必须达到医疗与养老行业的合规要求。"
+    ],
+    "next_steps": [
+      "先聚焦 20-200 床位、5-30 社区规模的连锁运营商，验证它们最在意的是入住前支付确定性、理赔追踪，还是逾期追款自动化。",
+      "把入住前支付闸门扩展成可复用的 payer playbook，让社区知道针对不同支付路径要先收哪些材料、最常见的失败点是什么。",
+      "增加 family self-serve portal，让家属能直接看到账单解释、分期选项、付款计划与待补资料，减少前台电话压力。",
+      "继续往区域级营运资金视角延伸，把预测回款与短期融资、信用额度或备用资金建议结合起来，形成更强的财务操作面。"
+    ],
+    "_source_file": "2026-04-18-carefloat.json"
+  },
+  {
     "date": "2026-04-17",
     "slug": "borderpilot",
     "title": "BorderPilot",
