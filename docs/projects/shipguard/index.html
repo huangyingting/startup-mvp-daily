@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ShipGuard · Startup MVP Daily</title>
+    <meta name="description" content="把 AI 写出来的代码，变成可以安全上线的版本：用验证代理接管评审、CI 诊断、例外升级与发布闸门。" />
+    <meta property="og:title" content="ShipGuard · Startup MVP Daily" />
+    <meta property="og:description" content="把 AI 写出来的代码，变成可以安全上线的版本：用验证代理接管评审、CI 诊断、例外升级与发布闸门。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://huangyingting.github.io/startup-mvp-daily/projects/shipguard/" />
+    <link rel="canonical" href="https://huangyingting.github.io/startup-mvp-daily/projects/shipguard/" />
+    <link rel="stylesheet" href="/startup-mvp-daily/assets/styles.css" />
+  </head>
+  <body>
+    
+    <main class="page-shell">
+      <a class="top-link" href="/startup-mvp-daily/">← 返回首页</a>
+      <section class="hero-card hero-card--project">
+        <p class="eyebrow">2026-04-19 · Developer Tools / AI Code Validation / Release Engineering</p>
+        <h1>ShipGuard</h1>
+        <p class="lede">把 AI 写出来的代码，变成可以安全上线的版本：用验证代理接管评审、CI 诊断、例外升级与发布闸门。</p>
+        <div class="score-pill">潜力评分 92/100</div>
+        <div class="hero-grid">
+          <article>
+            <p class="label">新闻来源</p>
+            <h2>Gitar, a startup that uses agents to secure code, emerges from stealth with $9 million</h2>
+            <p>Gitar 从 stealth 走向公开，并拿到 900 万美元融资，主打用 AI agents 处理 code review、CI workflow、security 与 maintenance，去承接 AI-generated code 带来的“code overload”。这条新闻真正释放的机会，不是再做一个更会写代码的助手，而是做一层更靠近“这段代码到底能不能进主干、能不能上线”的验证控制面：让工程负责人、平台团队和 reviewer 不再被 PR 洪水淹没，而是只在真正的高风险例外上出手。</p>
+            <a class="inline-link" href="https://techcrunch.com/2026/04/15/gitar-a-startup-that-uses-agents-to-secure-code-emerges-from-stealth-with-9-million/" target="_blank" rel="noreferrer">查看原文 ↗</a>
+          </article>
+          <article>
+            <p class="label">为什么值得做</p>
+            <p>这件事现在值得做，是因为 AI coding 已经把软件交付链条的瓶颈从“写代码”推到了“验证代码”。当 Claude Code、Codex、Cursor 这类工具让团队能在更短时间里生成更多 PR、测试变更和重构提交后，真正开始崩的往往不是产能，而是 review capacity、CI 稳定性和发布信任。新闻里 Gitar 的表述非常直接：更多代码意味着更多测试、更多 CI failures、更多需要 senior engineers 诊断的异常。这说明市场已经出现了一个新的独立工作层——不是帮你继续生成，而是帮你判断哪些能自动放行、哪些必须拦住、为什么拦住，以及该由谁处理。与此同时，企业也比过去更愿意接受“human only in exception cases”的模式：只要系统能给出足够好的证据、可解释的风险判断和清晰的升级路径，就有机会把 release validation 做成比 code generation 更刚需的一层。</p>
+            <p class="creative-edge">ShipGuard 的切口不是 another AI coder，也不是传统静态扫描器的换壳，而是把“提交之后到上线之前”的混乱地带做成一个有产品感的发布操作面。它不从 IDE 入口切，而是从 PR、CI、风险策略、例外审批和 release owner 的日常决策切入：一边自动读懂 diff、失败日志与历史回归，一边把 merge/no-merge 的判断转成团队可执行的队列。这样产品天然站在 engineering manager、platform team、security reviewer 和 on-call owner 之间，先替代最耗人的验证协作，再逐步延伸到自动修补、策略学习和发布后回溯。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="section-card">
+          <p class="eyebrow">Problem</p>
+          <h2>要解决什么问题？</h2>
+          <p>今天很多 AI-native 工程团队的核心问题，已经不是代码写不出来，而是写出来的东西没人来得及可靠地审。一个功能请求可能在半天内产出十几个 PR、几十个文件变更和一串自动生成测试，但真正决定能不能上线的信号却散落在 Git diff、CI log、lint 结果、测试波动、依赖变更、权限规则和 reviewer 评论里。结果是：初级开发者不敢判断、资深工程师被迫充当最终闸门、CI 红灯没人知道是环境噪音还是结构性风险，安全和平台团队则在上线前夕被临时拉来救火。随着 AI 生成代码比例上升，传统“每个 PR 都让人完整看一遍”的流程越来越不可持续，发布速度越快，团队越缺少一层把验证任务收束成证据、优先级和例外处理的统一界面。</p>
+          <h3>目标用户</h3>
+          <ul class="bullet-list"><li>已经大量使用 Claude Code、Codex、Cursor 等工具生成 PR，但 reviewer 与 tech lead 开始被验证工作拖住的 AI-native 产品工程团队</li><li>负责 GitHub 流程、CI 稳定性、合并策略和发布节奏，希望减少无效红灯与人工闸门压力的 platform / release engineering 团队</li><li>需要在加快交付与控制风险之间做平衡，又不能把每个变更都升级给资深工程师的 engineering manager、staff engineer 与研发负责人</li></ul>
+        </article>
+
+        <article class="section-card">
+          <p class="eyebrow">Signals</p>
+          <h2>来自新闻的关键信号</h2>
+          <ul class="bullet-list"><li>Gitar 融资 900 万美元，但它押注的不是 code generation，而是 code validation，说明投资人开始认可“验证层”会成为 AI coding 时代的独立品类。</li><li>新闻直接点出了 AI-generated code 带来的 code overload：更多代码、更多测试、更多 CI failures、更多需要诊断的异常，这不是局部痛点，而是正在扩大的团队级问题。</li><li>Gitar 的产品范围覆盖 code reviews、CI workflow management、security 与 maintenance，说明机会不在单点扫描，而在串起整条发布前验证链路。</li><li>创始人把产品定义为让 humans 只在 exception cases 介入，释放出一个强信号：买方真正想买的不是更多提醒，而是更少但更可信的人工决策时刻。</li><li>它强调“Generation produces code; validation makes it trustworthy”，说明软件团队对 AI 的下一阶段需求已经从生产力转向信任、可发布性和责任边界。</li><li>Gitar 由有 Intel Labs、Google、Uber 背景的创始人推动，并选择在 AI coding 爆发期公开，说明这类问题已经从研究或内部工程实践，进入明确可产品化的窗口期。</li></ul>
+        </article>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MVP</p>
+            <h2>这个原型包含什么</h2>
+          </div>
+          <p>如果一个轻量的 release validation cockpit 能接入 GitHub 和现有 CI，在每个 PR 上自动生成变更风险判断、测试缺口、失败归因和放行建议，并把只有高风险例外才推给人处理，那么已经大量使用 AI coding 的产品团队会愿意先把它加在现有开发流程前面，因为它替代的不是抽象的“研发智能化”，而是团队每天最痛、最容易拖慢发布、又最需要资深人力兜底的那段验证工作。</p>
+        </div>
+        <div class="card-grid">
+        <article class="info-card">
+          <h3>发布闸门评分卡</h3>
+          <p>ShipGuard 为每个 PR 自动生成一张 ship / review / block 评分卡，综合变更范围、文件敏感度、依赖触达、测试覆盖缺口、历史回归模式与 CI 状态，把“能不能进主干”从模糊感觉变成结构化判断。</p>
+        </article>
+        
+        <article class="info-card">
+          <h3>CI 故障归因器</h3>
+          <p>把海量失败日志自动聚类成根因视图：哪些是环境噪音、哪些是测试脆弱、哪些是由这次 diff 引入的真实风险，并给出建议动作，让团队不再在红灯海里盲目翻日志。</p>
+        </article>
+        
+        <article class="info-card">
+          <h3>例外审查队列</h3>
+          <p>只有高风险变更才进入人工审查队列。系统会附上变更摘要、疑似风险点、缺少的证据、建议 reviewer 和推荐处理路径，让资深工程师只处理真正需要人判断的 case。</p>
+        </article>
+        
+        <article class="info-card">
+          <h3>发布证据包</h3>
+          <p>在准备 merge 或 release 时，ShipGuard 自动生成一份可审计的证据包，汇总测试结果、策略命中、修复记录、责任人确认和放行理由，方便团队做发布回放、事故追责与合规留痕。</p>
+        </article>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Interactive demo</p>
+            <h2>三种最先能打动市场的使用场景</h2>
+          </div>
+          <p>点击不同场景，查看从体验入口到北极星指标的 MVP 路线。</p>
+        </div>
+        
+    <div class="scenario-shell">
+      <div class="scenario-tabs"><button class="scenario-tab" data-tab-target="#shipguard-panel-0" aria-pressed="true" id="shipguard-scenario-0">AI PR 洪峰下的日常合并</button><button class="scenario-tab" data-tab-target="#shipguard-panel-1" aria-pressed="false" id="shipguard-scenario-1">发布前清理 CI 红灯</button><button class="scenario-tab" data-tab-target="#shipguard-panel-2" aria-pressed="false" id="shipguard-scenario-2">高风险改动的人工例外审批</button></div>
+      <div class="scenario-panels">
+            <section class="scenario-panel" id="shipguard-panel-0" >
+              <p class="eyebrow">Use case</p>
+              <h3>AI PR 洪峰下的日常合并</h3>
+              <p class="scenario-hook">真正压垮团队的不是一个大改动，而是一天几十个看起来都“差不多安全”的小 PR。</p>
+              <ul class="workflow-list"><li>工程团队把 GitHub 仓库和 CI 管道接入 ShipGuard，系统开始监听新开的 PR、测试结果和策略命中情况</li><li>每个 PR 自动得到风险评分、测试缺口分析和 ship / review / block 建议；低风险变更可按策略自动放行，高风险变更进入例外审查队列</li><li>tech lead 每天只需要处理红黄灯 PR，而不是逐条通读所有 diff；系统同时记录最终决策，反哺后续策略优化</li></ul>
+              <div class="metric-pill">北极星指标：PR 平均合并时长 / 每个 PR 需要的人审分钟数 / 自动放行占比</div>
+            </section>
+            
+            <section class="scenario-panel" id="shipguard-panel-1" hidden>
+              <p class="eyebrow">Use case</p>
+              <h3>发布前清理 CI 红灯</h3>
+              <p class="scenario-hook">很多团队真正怕的不是 CI fail，而是不知道这次 fail 到底是不是会挡住上线的那一种。</p>
+              <ul class="workflow-list"><li>release owner 在准备发版时打开 ShipGuard，查看当前 release train 中所有失败任务的根因聚类与风险排序</li><li>系统把 flaky test、环境波动、权限配置问题和真实代码回归分组展示，并标出最可能影响主流程的阻塞项</li><li>平台团队按建议先处理少数关键红灯，同时把非阻塞噪音降级，缩短发版会议里的争论时间</li></ul>
+              <div class="metric-pill">北极星指标：CI 故障平均定位时间 / 因误判红灯导致的发布延迟次数</div>
+            </section>
+            
+            <section class="scenario-panel" id="shipguard-panel-2" hidden>
+              <p class="eyebrow">Use case</p>
+              <h3>高风险改动的人工例外审批</h3>
+              <p class="scenario-hook">AI 写代码可以很快，但真正需要人负责的，是那些一旦出错就会把线上打穿的改动。</p>
+              <ul class="workflow-list"><li>当 PR 触达鉴权、计费、数据删除或生产配置等敏感区域时，ShipGuard 自动阻止直接合并，并生成发布证据包</li><li>系统给出建议 reviewer、潜在回归面、缺失测试与推荐补救动作，相关负责人在同一页面完成审查与签字放行</li><li>合并后，证据包与最终决策留存在项目时间轴中，供事故复盘、审计或团队策略回顾使用</li></ul>
+              <div class="metric-pill">北极星指标：敏感变更人工漏审率 / 生产事故中与高风险变更相关的占比 / 审批完成时长</div>
+            </section>
+            </div>
+    </div>
+    
+      </section>
+
+      <section class="content-grid">
+        <article class="section-card">
+          <p class="eyebrow">Stack</p>
+          <h2>当前技术栈</h2>
+          <ul class="bullet-list"><li>第一阶段先用静态展示页验证“AI coding 之后的验证层”这个叙事是否足够打动 engineering leader、platform team 与 release owner，再收集 demo 申请与目标团队规模。</li><li>产品端优先做 Web 控制台和 GitHub App，不替代 IDE，也不重写 CI；先围绕 PR、risk policy、CI run、exception case 和 evidence pack 五个核心对象展开。</li><li>后端可用 Postgres 或 Supabase 存储变更元数据、策略命中结果、失败日志聚类、人工决策记录与发布时间轴，再通过队列处理异步分析任务。</li><li>AI 层重点负责三件事：读懂 diff 与提交意图、把失败日志归因成可执行问题、把原始验证信号压缩成 reviewer 能快速消费的证据。</li><li>集成层优先连接 GitHub、GitHub Actions、CircleCI、Buildkite、Slack 与 Jira/Linear，让 ShipGuard 成为现有研发流程上的增量控制面，而不是新的孤岛系统。</li><li>为了建立信任，交互上必须先让团队看见“为什么被拦、为什么能放、若要放行还缺什么证据”，而不是只给一个黑盒分数。</li></ul>
+        </article>
+        <article class="section-card">
+          <p class="eyebrow">Risks</p>
+          <h2>主要风险</h2>
+          <ul class="bullet-list"><li>如果风险判断误报太多，团队会把 ShipGuard 当成又一个增加摩擦的门神，而不是减少审查负担的工具。</li><li>如果系统漏掉真实高风险变更，早期一次重大事故就可能直接摧毁产品信任。</li><li>不同团队的代码库结构、CI 体系和发布规范差异很大，若策略模板不够灵活，落地成本会迅速升高。</li><li>要读懂私有代码、日志和安全敏感配置，产品必须在权限、数据驻留和审计留痕上达到企业级要求。</li><li>如果只会总结问题、不能稳定给出可执行下一步，ShipGuard 很容易退化成另一个信息看板，而不是验证工作流。</li></ul>
+        </article>
+      </section>
+
+      <section class="section-card">
+        <p class="eyebrow">Next steps</p>
+        <h2>如果继续迭代，接下来做什么</h2>
+        <ul class="bullet-list"><li>先聚焦使用 Python / TypeScript、每天有明显 AI 生成提交量的 20-200 人研发团队，验证他们最痛的是 reviewer 瓶颈、CI 噪音，还是敏感变更放行。</li><li>把发布闸门评分卡扩展成可配置的 policy library，针对鉴权、计费、数据迁移、依赖升级等常见高风险场景提供模板化规则。</li><li>把例外审查结果持续反哺模型与规则，让系统逐步学会不同团队对“可发布”的真实判断标准。</li><li>继续往发布后闭环延伸，把线上事故、回滚、SLO 波动与当时的 PR 证据包关联起来，形成更强的 release learning loop。</li></ul>
+      </section>
+    </main>
+    
+    <script src="/startup-mvp-daily/assets/app.js" defer></script>
+  </body>
+</html>
