@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-04-20",
+    "slug": "looprna",
+    "title": "LoopRNA",
+    "tagline": "把 RNA 药物开发从“设计一批、等一轮、猜下一步”改成连续迭代的 Design–Make–Test 操作台。",
+    "category": "Biotech / RNA Therapeutics / Lab-in-the-Loop",
+    "potential_score": 91,
+    "summary": "Eclipsebio 发布了 eCOMPASS™，把 AI 优化的 RNA 设计、研发级原型制造与深度测序表征串成一个闭环式 Design–Make–Test 平台，并在 Cas9 mRNA 案例里给出蛋白表达提升 400%、编辑效率提升 58% 的结果。这条新闻真正释放的机会，不是再做一个只会吐序列建议的 RNA 设计模型，而是做一层更靠近项目推进现场的“序列到证据”工作台：让发现团队、转化团队与实验团队在同一界面里看见这轮为什么选、下一轮怎么改、哪条候选值得继续烧实验预算。",
+    "why_now": "这件事现在值得做，是因为 RNA therapeutics 已经进入一个很典型的第二阶段：单点 AI 设计不再稀缺，真正稀缺的是把设计结果快速变成可验证、可比较、可复用的实验决策。很多团队已经能生成大量候选序列，但真正拖慢项目的，是设计、制备、QC、表征和解释分散在不同工具、不同团队与不同供应商之间。新闻里 Eclipsebio 把这个痛点说得很明确：行业长期缺一套能把 sequence design 直接连到 deep mechanistic characterization 的平台，而不是“先算一轮，再做几个标准 QC，最后靠经验判断”。当平台能拿到每个目标十几万级别的数据点，并把它反哺回下一轮设计时，价值中心就从“会不会生成序列”转向“能不能缩短一次有效迭代的时间、提升进入下一阶段的把握”。",
+    "creative_edge": "LoopRNA 不伪装成又一个 AI sequence generator，也不试图替代湿实验本身，而是把最容易失控的那段协作层做成产品：从目标定义、候选批次、实验回传、机制证据到下一轮决策，全都挂在一条可追踪的 program timeline 上。它的价值不在于生成更多候选，而在于帮团队更早停掉差方向、更快找出值得放大的分子，并把“为什么继续投这条序列”变成可共享、可复盘的证据。",
+    "problem": "今天做 RNA 药物开发的团队，常常不是缺一个模型，而是缺一个能把跨职能判断收束起来的操作面。计算团队会产出很多候选，实验团队要安排制备和表征，项目负责人要在表达、稳定性、可制造性和下游应用之间做权衡，但这些信号往往散落在邮件、表格、LIMS、CRO 报告和零散 notebook 里。结果是：每一轮实验都很贵，但为什么选这批、这批输在哪里、下一轮该怎么改，往往没有结构化沉淀。随着 RNA 平台、基因编辑、mRNA 疫苗和蛋白替代项目越来越多，团队最缺的不是“更多 sequence”，而是一个能让设计、制备、测试和项目决策形成闭环的统一界面。",
+    "mvp_thesis": "如果一个轻量的 RNA program cockpit 能让团队从目标蛋白或功能需求出发，统一管理候选序列、原型制备状态、表征结果和下一轮优化建议，并把每一轮的 go / no-go 判断沉淀成可追溯证据，那么早期 RNA therapeutics 团队会愿意先把它加在现有实验流程之上，因为它直接减少的是最昂贵的东西：无效轮次、跨团队解释成本和错误的放大决策。",
+    "source": {
+      "title": "Eclipsebio Launches eCOMPASS™, an AI-Enabled Lab-in-the-Loop Platform for RNA Therapeutic Development",
+      "url": "https://www.prnewswire.com/news-releases/eclipsebio-launches-ecompass-an-ai-enabled-lab-in-the-loop-platform-for-rna-therapeutic-development-302745017.html",
+      "publisher": "PR Newswire",
+      "published": "2026-04-20"
+    },
+    "news_signals": [
+      "Eclipsebio 把产品定义成一条完整的 Design–Make–Test workflow，而不是单点模型，说明 RNA 赛道的价值正在从“生成序列”向“压缩迭代回路”迁移。",
+      "新闻披露 eCOMPASS 在 Cas9 mRNA 案例里实现蛋白表达提升 400%、编辑效率提升 58%，说明买方会为直接连到项目结果的改进买单，而不只看模型分数。",
+      "平台把 AI 设计、研发级原型制备与深度测序表征放进同一闭环，释放出一个强信号：下一个可产品化层，不是更大的 foundation model，而是 sequence-to-evidence orchestration。",
+      "Eclipsebio 强调每个目标氨基酸序列可生成超过 150,000 个数据点，说明差异化护城河很可能来自实验回传与机制数据，而不是单次生成能力。",
+      "公司提到已服务全球前 30 大 biopharma 中的 80% 以及 300 多家 biotech / academic 伙伴，说明这不是纯概念，而是已经站在真实项目工作流上的产品方向。",
+      "Terrain Bio 的并购把 AI sequence design 和研发级制造能力并进，说明市场正在奖励能把多段工作流收口到一个 program surface 的团队。"
+    ],
+    "audiences": [
+      "在做 mRNA、siRNA、基因编辑递送或蛋白替代疗法的早期 RNA therapeutics 创业团队，需要更快决定哪条候选该继续推进的 platform / discovery leader",
+      "同时管理计算设计、湿实验、外包制备与表征分析，但缺少统一项目视图的 translational biology、CMC 与 program management 团队",
+      "为 biopharma 或学术机构做 RNA 发现服务、希望把“交付序列”升级成“交付决策证据”的 CRO、platform lab 与转化研究组织"
+    ],
+    "features": [
+      {
+        "name": "候选序列编排台",
+        "description": "从目标蛋白、治疗场景与约束条件出发，统一生成和管理候选批次；每条序列都带着设计意图、优化目标、版本历史与推荐优先级，避免团队在表格里反复比对。"
+      },
+      {
+        "name": "Design–Make–Test 时间轴",
+        "description": "把每轮设计、原型制备、QC、表征和复盘挂在同一条项目时间轴里，实时显示当前卡在哪一步、哪条候选等待实验、哪些结果已经足够触发 go / no-go 判断。"
+      },
+      {
+        "name": "机制证据对账板",
+        "description": "把表达、稳定性、完整性、杂质、翻译动力学等关键读数归拢成一页式证据板，帮助团队不只看最终分数，还能看清“为什么这条序列表现更好”。"
+      },
+      {
+        "name": "下一轮优化建议器",
+        "description": "系统基于本轮实验回传，自动给出下一轮该保留、淘汰、局部变更还是更换策略的建议，并说明建议背后的数据依据，让项目负责人更快发出下一轮实验指令。"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "基因编辑项目的 Cas9 mRNA 冲刺",
+        "hook": "真正烧钱的不是做一次实验，而是在表达、编辑效率和可制造性之间来回试错太多轮。",
+        "workflow": [
+          "项目负责人输入目标 cargo、递送场景与必须满足的制造约束，LoopRNA 建立该项目的候选池与评价框架",
+          "计算与实验团队把本轮入选序列、制备状态和表征读数回传到同一时间轴中，系统自动比较表达、稳定性和关键杂质指标",
+          "平台输出一份下一轮 shortlist 与淘汰理由，帮助团队在例会上直接决定要追加哪几条序列、停掉哪几条方向"
+        ],
+        "metric": "达到预设表达 / 编辑门槛所需轮次、每轮 shortlist 命中率、单项目实验预算浪费率"
+      },
+      {
+        "name": "mRNA 疫苗候选的并行筛选",
+        "hook": "很多团队可以并行做十几条候选，但真正难的是快速看出哪一组值得扩大资源。",
+        "workflow": [
+          "团队按免疫原、剂型和生产限制建立多个候选 batch，LoopRNA 自动维护每组候选的设计目标与实验优先级",
+          "来自内部实验室和外部 CRO 的 QC 与测序结果被统一归档，系统自动标出表现异常、证据缺失与值得追加验证的候选",
+          "program lead 在同一页面完成跨 batch 对比，并生成进入动物实验或下一阶段开发的推荐名单"
+        ],
+        "metric": "从候选生成到进入下一阶段的天数、跨批次比较所需人工小时数、进入 in vivo 前的淘汰准确率"
+      },
+      {
+        "name": "学术平台向产业化项目交接",
+        "hook": "很多好项目不是死在科学上，而是死在“证据散了、版本乱了、没人说得清为什么选这条”。",
+        "workflow": [
+          "转化研究团队把历史序列版本、实验记录和关键图表导入 LoopRNA，系统自动整理 lineage 与缺失字段",
+          "平台将每条候选的证据强度、可制造性风险和下一步建议标准化，形成对外可共享的项目摘要",
+          "产业合作方或内部投资委员会用同一份 program brief 决定是否继续资助、合作或进入正式开发"
+        ],
+        "metric": "项目交接准备时间、因证据不完整导致的返工次数、外部评审通过率"
+      }
+    ],
+    "stack": [
+      "第一阶段先用静态展示页验证“RNA 开发不缺生成、缺闭环”这条叙事是否能打动 discovery lead、translational team 与 biotech founder，再收集 demo 申请。",
+      "产品端优先做 Web 控制台，不替代现有 LIMS / ELN，而是围绕 candidate、batch、assay、evidence pack 和 decision round 五个核心对象展开。",
+      "后端可用 Postgres 或 Supabase 存储序列版本、实验批次、QC 结果、表征指标和人工 go / no-go 决策，再通过异步任务处理文件导入和指标聚合。",
+      "AI 层重点不是从零发明序列，而是三件事：解析设计目标、把实验结果压缩成可比较证据、生成下一轮有依据的优化建议。",
+      "集成层优先连接 LIMS、电子实验记录、测序数据导出与 CRO 报告输入，让 LoopRNA 成为现有研发工作流上的决策面，而不是新的数据孤岛。",
+      "交互上必须坚持 evidence-first：任何推荐都要指向对应的读数、版本差异与实验上下文，避免产品被视为黑盒科研助手。"
+    ],
+    "risks": [
+      "如果产品只会汇总数据、不能稳定支持下一轮决策，它很容易退化成又一个漂亮但没人持续打开的项目看板。",
+      "不同 RNA modality、assay 体系和实验流程差异很大，若早期产品试图一口吃下所有场景，实施成本会迅速失控。",
+      "实验数据天然存在噪声与批次偏差，若系统过度自信地给出优化建议，可能误导团队浪费下一轮预算。",
+      "生物医药销售周期长、验证周期慢，产品需要先在高频项目复盘和跨团队协作价值上建立切入口，而不是一开始就承诺提高临床成功率。",
+      "涉及私有序列、表征数据和合作方文件时，权限、审计与 IP 保护必须做得足够企业级，否则很难进入真实项目环境。"
+    ],
+    "next_steps": [
+      "先聚焦 10-80 人规模、已经有内部计算设计能力但实验编排仍靠表格推进的 RNA therapeutics 团队，验证他们最痛的是批次管理、结果解释还是 go / no-go 决策。",
+      "把机制证据对账板扩展成按 modality 区分的模板库，先覆盖 mRNA、siRNA 与 gene editing cargo 三类高频场景。",
+      "增加 candidate lineage 视图，让团队能清楚看到每一轮序列改动、实验结果变化与最终决策之间的因果路径。",
+      "继续往外部协作延伸，把 CRO 回传、采购状态和阶段性审查材料也纳入 program timeline，形成更完整的 sequence-to-evidence operating layer。"
+    ],
+    "_source_file": "2026-04-20-looprna.json"
+  },
+  {
     "date": "2026-04-19",
     "slug": "shipguard",
     "title": "ShipGuard",
