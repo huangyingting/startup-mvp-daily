@@ -1,0 +1,103 @@
+{
+  "date": "2026-04-26",
+  "slug": "priceplane",
+  "title": "PricePlane",
+  "tagline": "把套餐、权限、额度与 AI 用量规则从代码里抽出来，做成一个能在运行时调整的变现控制台。",
+  "category": "SaaS Infrastructure / Pricing & Packaging / AI Monetization",
+  "potential_score": 92,
+  "summary": "Schematic 宣布完成 650 万美元种子轮，并把自己定位成 AI 时代的 runtime monetization infrastructure：不只是管理价格表，而是把产品里的 entitlements 与 enforcement 从工程代码中抽离出来，让 SaaS 与 AI 公司能在运行时调整套餐、额度、功能权限与例外规则。这条新闻真正释放的机会，不是再做一个 billing dashboard，也不是再做一套 CPQ，而是做一层更靠近“客户此刻到底该被允许用什么、用多少、超了之后如何处理”的产品级控制面。",
+  "why_now": "这件事现在值得做，是因为 AI 产品正在把软件定价从静态订阅推向动态、混合、运行时发生的价值交换。过去 seat-based SaaS 时代，套餐逻辑经常可以写死在代码里：某个 plan 对应哪些功能、多少用户、多少存储，改一次就发一次版。可 AI 时代的产品越来越不是这样运作的：同一个客户今天可能按席位付费，明天又要加上 token、工作流次数、代理运行额度、模型等级或成功结果分成；销售团队还经常需要给大客户临时打包例外；财务和产品又想快速测试新价格，而工程团队却被 entitlement 逻辑绑死在发布流程里。Schematic 在新闻里给出的信号非常关键：它强调价值与成本都在 runtime 才真正发生，并且 Stripe 也开始把 entitlements 当成更底层的能力看待。这说明市场正在从“先收钱、再靠代码补权限”转向“收费与权限在运行时被统一编排”。谁能先把这个变现控制层产品化，谁就有机会成为 AI 软件公司的新基础设施。",
+  "creative_edge": "PricePlane 的创意不在于再做一个财务系统，而在于把“商业策略怎样真正落实到产品行为”这层过去最容易被低估的灰色地带独立出来。它既不是账单系统，也不是单纯 feature flag，而是把 plan、usage、exception、grandfathering、overage 和 access policy 放进同一个可操作对象里。对成长中的 AI/SaaS 公司来说，这一层一旦成立，定价实验、企业客制、销售承诺兑现和毛利控制就不再每次都要动工程主干。",
+  "problem": "今天很多 SaaS 与 AI 公司真正卡住增长的，不是想不出怎么收费，而是收费逻辑一旦要落进产品，就会变成跨工程、产品、销售和财务的慢动作工程。一个新 AI 套餐要上线，团队不仅要改官网价格页和 Stripe 方案，还要改产品里的权限判断、额度阈值、试用逻辑、超额提示、升级路径和特殊客户例外；如果某个大客户要求多给 500 次 agent run、保留旧套餐价格，或只开放某个模型等级给特定 workspace，往往又得让工程师去手动改代码或数据库。久而久之，真正支撑收入的核心规则散落在 webhook、后端条件判断、客服手册和销售承诺里。结果是：价格调整慢、包装实验难、例外客户越来越多、账单与产品体验经常不一致，最糟的是公司明明想提高 monetization agility，却被 entitlement debt 反过来拖住。企业不缺 billing 系统，缺的是一层把“卖了什么”即时翻译成“产品里允许发生什么”的运行时操作面。",
+  "mvp_thesis": "如果有一个面向 AI/SaaS 团队的轻量控制台，能把套餐定义、功能权限、用量额度、试用政策、超额策略和客户级例外统一建模，并在运行时实时执行到产品访问层，那么增长中的软件公司会愿意接入它，因为它替代的是当下最容易阻塞新价格上线、最容易积累技术债、又最直接影响收入实验速度的 entitlement 与 enforcement 工作。",
+  "source": {
+    "title": "Exclusive: Schematic Raises $6.5M To Help Companies Update Their Pricing Faster And Easier In The AI Era",
+    "url": "https://news.crunchbase.com/venture/update-pricing-faster-easier-saas-ai-schematic/",
+    "publisher": "Crunchbase News",
+    "published": "2026-04-21"
+  },
+  "news_signals": [
+    "新闻明确把问题定义为 entitlements and enforcement infrastructure，而不是更泛的软件计费，说明买点已经从财务后端转向产品运行时。",
+    "Schematic 提出 runtime monetization infrastructure 这一心智模型，反映 AI 产品的价值与成本都越来越在使用过程中实时产生。",
+    "Stripe 选择与其合作，把 entitlements 往更底层能力推进，说明支付与产品权限之间的断层正在成为真实市场机会。",
+    "文章给出 Plotly 将价格变更时间从数周压到 10 分钟的案例，证明客户价值锚点非常清晰：更快上线、更快实验、更少工程阻塞。",
+    "AI 定价正在从固定 seat 走向混合式、消费式与结果式，意味着手写权限逻辑会迅速变成增长瓶颈。",
+    "创始团队长期做 pricing and packaging，说明这不是凭空包装出来的新术语，而是从增长公司里反复出现的具体痛点抽象出来的产品。"
+  ],
+  "audiences": [
+    "已经在卖 seat + usage、credit、agent run 或模型等级混合套餐的 AI SaaS 创业团队，需要更快上线与调整商业模型的产品负责人、营收负责人和创始人",
+    "负责 billing、entitlements、feature gating 与客户例外处理，但不想继续把商业规则埋在应用代码里的 platform engineering / infrastructure 团队",
+    "频繁面对企业定制报价、试点扩容、旧套餐续约与 grandfathering 问题，希望减少工程依赖的 RevOps、Sales Ops 与 monetization 团队"
+  ],
+  "features": [
+    {
+      "name": "套餐与权限编排器",
+      "description": "把产品套餐拆成可组合对象：功能、模型等级、workspace 数、用户数、token 或 agent run 配额、试用期与超额策略都可以独立配置，再映射到不同 plan 与合同版本。"
+    },
+    {
+      "name": "运行时额度护栏台",
+      "description": "实时接入产品用量事件，对额度消耗、临界阈值、超额后动作与降级规则进行执行，让系统真正决定“还能不能继续跑”“该提醒、升级还是阻断”。"
+    },
+    {
+      "name": "客户例外沙盒",
+      "description": "为单个客户、workspace 或合同批次设置临时扩容、白名单功能、旧价格保留、试点赠送额度与销售承诺备注，并记录生效时间、责任人与到期条件。"
+    },
+    {
+      "name": "变现变更回放器",
+      "description": "在新价格或新权限规则发布前，先模拟它对现有客户群的影响：哪些客户会被降级、哪些会触发 overage、哪些 enterprise 例外会失效，并形成上线前检查清单。"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "从固定席位升级到 AI 混合计费",
+      "hook": "很多 AI 产品已经知道 seat-based 不够用了，但真正卡住转型的往往不是价格策略，而是产品里没有一层能执行新规则。",
+      "workflow": [
+        "产品负责人在 PricePlane 中创建新的 Pro AI 套餐，加入基础席位、每月 agent run 配额、可用模型等级与超额后的自动升级建议。",
+        "平台工程团队只需要把产品用量事件接入运行时护栏，系统开始按 workspace 实时扣减额度并触发站内提醒。",
+        "运营团队观察试点客户的实际消耗与升级转化，再决定是否扩大到全量客户。"
+      ],
+      "metric": "新套餐上线周期 / 需要工程发版的定价变更次数 / 额度触达后的升级转化率"
+    },
+    {
+      "name": "企业客户定制包不再靠人工改库",
+      "hook": "销售最怕答应了企业客户的组合条件，最后还要排队等工程手改权限。",
+      "workflow": [
+        "销售运营为某个企业客户创建合同版本：保留旧价格、增加 500 次 agent run、开放高级模型、限制仅两个部门可用。",
+        "客户例外沙盒自动生成生效规则、到期日期与责任归属，并同步给实施与客服团队查看。",
+        "上线后系统持续监控该客户是否接近额度上限，以及例外是否已进入该被续费或回收的节点。"
+      ],
+      "metric": "企业定制交付时间 / 手动权限事故数 / 到期例外的回收率"
+    },
+    {
+      "name": "发布新价格前先做影响预演",
+      "hook": "最危险的不是调价本身，而是没人能在上线前说清楚会影响哪些老客户与哪些系统逻辑。",
+      "workflow": [
+        "营收负责人准备把某项 AI 功能从免费试用改为按用量收费，并在变现变更回放器中选择目标客户群与规则变更。",
+        "系统模拟旧客户、试用客户和 enterprise 客户的行为差异，输出哪些账号会触发限制、哪些例外与 grandfathering 会冲突。",
+        "团队只处理高风险例外项后再正式发布，减少上线后的客服爆炸与收入流失。"
+      ],
+      "metric": "价格变更后的支持工单量 / grandfathering 冲突率 / 调价后 30 天净收入提升"
+    }
+  ],
+  "stack": [
+    "第一阶段聚焦 20 到 500 人规模、已经进入复杂 monetization 阶段的 AI SaaS 公司，而不是一开始服务超大型企业与传统订阅软件全场景。",
+    "数据入口优先接 Stripe Billing、产品事件流、workspace / account 元数据与内部 feature flag，先把收费对象、权限对象与用量对象对齐。",
+    "规则层采用声明式 entitlement schema + policy engine 组合：业务团队配置 plan 与例外，运行时服务负责低延迟执行与审计。",
+    "产品形态以 Web 控制台为主，核心对象包括 plan、feature、meter、quota、exception、contract version 与 enforcement event。",
+    "输出层优先做实时决策 API、后台变更审计、客户级时间轴和上线前 impact simulation，而不是先替代账单生成或 ERP。",
+    "商业验证先盯新套餐上线时间、工程支持成本、例外处理效率与单位收入改善，再逐步扩展到实验分析与毛利优化。"
+  ],
+  "risks": [
+    "不同公司的产品对象、计费粒度与合同结构差异很大，如果抽象层做得不够灵活，系统会很快被边缘案例击穿。",
+    "运行时权限判断一旦出错，可能直接带来收入损失或客户体验事故，因此可解释性、回滚与审计必须足够强。",
+    "如果产品试图同时覆盖 billing、CPQ、报价审批和收入确认，销售周期会急剧变长，削弱作为控制层切入的优势。",
+    "很多企业内部已有 feature flag、billing webhook 与自研 entitlement 逻辑，迁移成本与组织惯性会拖慢 adoption。",
+    "AI 产品的计费方式仍在快速演化，若平台过早绑定某种计量模型，可能在市场变化时失去通用性。"
+  ],
+  "next_steps": [
+    "先把 Stripe + 产品事件流 + runtime enforcement 做深，验证团队是否真的能在不改核心业务代码的前提下完成主要价格变更。",
+    "把客户例外沙盒做成最早可收费模块，因为 enterprise 定制与 grandfathering 往往最痛、最频繁，也最容易证明 ROI。",
+    "继续补一层上线前 impact simulation 与回滚机制，让营收、产品与工程团队敢更高频率地做定价实验。",
+    "向上延伸到 monetization analytics：不仅知道规则被执行了，还能看见哪些 entitlement 设计带来更高升级率、更低支持成本与更健康毛利。"
+  ]
+}
