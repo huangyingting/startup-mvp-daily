@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-04-29",
+    "slug": "rosterlane",
+    "title": "RosterLane",
+    "tagline": "把护士、技师与临床人才从发现、资格、递交到上岗前准备，收束成一家 staffing firm 真正能放大人效的 placement OS。",
+    "category": "Healthcare Staffing / Workforce Operations / AI Recruiting",
+    "potential_score": 90,
+    "summary": "Nomad Health 宣布从 healthcare staffing agency 正式转向面向医疗招聘公司的 AI operating system，且产品不是停留在 recruiter 助手，而是把 clinician 自助找岗、AI sourcing、credentialing、submission packet 与预测分析放进同一套系统。真正值得下注的机会，不是再做一个医疗招聘 ATS，也不是再做一个泛化 AI 招聘助手，而是先做一层更靠近“这个岗位本周能不能填上、该先推哪位 clinician、还差哪些材料才能递交”的 placement control plane。",
+    "why_now": "这件事现在值得做，是因为 healthcare staffing 正同时遭遇三种结构性压力。第一，利润率在收窄，但很多 staffing firm 的增长方式仍然是继续加 recruiter、加 coordinator、加 credentialing 人手，成本天然和 headcount 线性绑定。第二，新闻里 Nomad 给出的信号很强：它不是概念 demo，而是已经在自营业务里跑出 15,000+ recruiter-less placements、11M+ billed hours，并沉淀了 10,000+ client facility rules，说明行业里最复杂、最脏的规则和流程已经足够被产品化。第三，临床人才越来越习惯消费级体验，希望自己能更快地看到岗位、补材料、知道卡点，而不是持续等 recruiter 手动推进。窗口期就在于：AI 终于能把过去散落在 ATS、短信、邮箱、表格和人工脑力里的“placement 动作”串成一条连续工作流，让 staffing firm 在不明显增员的情况下继续提升 fill rate 和提交速度。",
+    "creative_edge": "RosterLane 的创意不在于把 recruiter 替换掉，而在于把 staffing firm 最容易失速的那段中间地带做成真正可操作的运行界面：岗位来了之后，系统先判断这单值不值得追、最可能成单的人在哪、谁已接近 submission-ready、缺的证件和体检材料是什么、哪家 facility 的隐藏规则会让这单白忙一场。它管理的核心对象不是简历，也不是 job board listing，而是“可被提交的 clinician-placement pair”。一旦把这个对象做对，sourcing、credentialing、packet 生成、优先级和毛利判断就能串成一条线。",
+    "problem": "今天很多医疗 staffing firm 的瓶颈，并不是没有候选人，也不是没有订单，而是没有一条足够快、足够统一、足够可追踪的方式，把候选人真正推进到可递交、可上岗状态。一个 travel nurse 或 allied health placement 往往要跨过岗位匹配、州执照核验、证件收集、技能与偏好筛选、facility 特殊要求、submission packet 拼装、沟通跟进和开工前确认等多个环节；这些动作常常散落在 ATS、VMS、短信、电话、共享文件夹和 recruiter 的个人习惯里。结果是：高价值岗位先被别人抢走，recruiter 花大量时间追已经不活跃的人，credentialing 团队总在最后一刻补材料，管理层又很难知道到底是 supply 不够、流程太慢，还是某类 facility rule 正在吞掉成交率。市场缺的不是再多一个 job board，而是一层把“从有意向到 submission-ready”做成可计算、可分发、可预警的 placement operating surface。",
+    "mvp_thesis": "如果一个轻量的 placement cockpit 能把 clinician 自助资料完善、岗位匹配优先级、credentialing 缺口、facility 规则检查和 submission packet 生成放进同一条流水线，并且只在高风险例外时把 case 升级给 recruiter 或 middle office，那么中型到大型 healthcare staffing firm 会愿意先把它接在现有 ATS / VMS 之上，因为它替代的不是抽象的“AI recruiting”，而是每一笔 placement 里最耗人、最影响 fill rate、又最难标准化的执行环节。",
+    "source": {
+      "title": "Nomad Health Evolves from Staffing Agency to the AI Operating System for Healthcare Staffing Firms",
+      "url": "https://www.prnewswire.com/news-releases/nomad-health-evolves-from-staffing-agency-to-the-ai-operating-system-for-healthcare-staffing-firms-302752431.html",
+      "publisher": "PR Newswire",
+      "published": "2026-04-24"
+    },
+    "news_signals": [
+      "Nomad 不是新做一个插件，而是从自营 healthcare staffing agency 正式转为 software platform company，说明行业一线流程已被验证到足以独立产品化。",
+      "新闻披露其系统已支持 15,000+ recruiter-less placements 与 11M+ billed hours，这给出一个很强的市场信号：医疗招聘里最值钱的并不是沟通本身，而是让 placement 在更少人工触达下持续推进。",
+      "平台架构吸收了 10,000+ client facility rules，说明 healthcare staffing 的真正壁垒不是流量，而是复杂规则、例外路径与上岗前执行细节。",
+      "Nomad 把产品拆成 Clinician Suite、Recruiter Suite、Middle Office Suite 与 Intelligence Suite，说明赢家不会只做某一个职能工具，而会覆盖从候选人自助到中后台执行的连续链路。",
+      "它强调既可替代现有 ATS/CRM/job board，也可叠加在现有系统之上，说明市场愿意接受从“system of record”向“system of action”迁移的过渡式切入。",
+      "在利润承压、合规要求提高、临床人才体验要求上升的背景下，任何能降低 cost per placement、提高 submission speed 的产品，都更容易直接对接经营指标。"
+    ],
+    "audiences": [
+      "管理 travel nurse、locum、allied health 或 per diem 业务，想在不持续扩 recruiter headcount 的情况下提升 fill rate 的中大型 healthcare staffing firm 负责人",
+      "负责 recruiter productivity、job order prioritization 与 pipeline health，希望减少低价值跟进和重复沟通的 branch manager、recruiting lead 与运营负责人",
+      "处理执照、体检、材料收集与 submission packet 的 credentialing / middle office 团队，需要更早看见缺口而不是在递交前夕救火"
+    ],
+    "features": [
+      {
+        "name": "Clinician 就绪漏斗",
+        "description": "让 clinician 在白标 web / mobile 入口内自行补齐执照、偏好、可上岗时间、州别限制与关键材料；系统实时给出 submission-ready 分数，告诉人才与团队还差哪一步，而不是等 recruiter 手动追问。"
+      },
+      {
+        "name": "岗位优先级雷达",
+        "description": "基于岗位紧急度、历史填补难度、毛利空间、facility 规则与当前候选池活跃度，对 job orders 做动态排序，并自动把最值得追的岗位与最可能成交的 clinician 组合推到 recruiter 面前。"
+      },
+      {
+        "name": "Facility Rule 编译器",
+        "description": "把不同医院、州别、岗位类型与客户特有要求转成可检查规则，在递交前自动提示证件缺口、经验不匹配、体检时效或 onboarding 风险，减少白做 packet 和临门被退回。"
+      },
+      {
+        "name": "Submission Autopilot",
+        "description": "自动汇总候选人资料、生成 submission packet、草拟对外沟通与内部交接摘要，并在递交后持续追踪反馈、开工日期与掉单风险，把中台和 recruiter 的接力从消息线程拉回一条时间线。"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "周一早上先追最可能填上的急单",
+        "hook": "对 staffing firm 来说，最贵的不是岗位少，而是大家把最值钱的 8 小时浪费在本周根本填不上的单子上。",
+        "workflow": [
+          "系统在早晨自动汇总新到 job orders，并按紧急度、毛利、竞争强度与现有候选匹配度打分。",
+          "Recruiting lead 看到哪 20 单最值得今天优先推进，以及每单最接近 submission-ready 的 clinician 名单。",
+          "高优单自动分配给对应 recruiter，低概率单进入 nurture 或等待补 supply，不再让团队平均用力。"
+        ],
+        "metric": "高优岗位 24 小时内首次递交率 / 每位 recruiter 每周有效 submission 数 / job order 首次响应时长"
+      },
+      {
+        "name": "Credentialing 团队提前发现缺口而不是最后救火",
+        "hook": "很多 placement 不是输在找不到人，而是输在材料总是在递交前几个小时才发现缺。",
+        "workflow": [
+          "Clinician 在自助端上传执照、疫苗、背景调查与技能文件，系统按客户规则自动校验有效性和时效。",
+          "Facility Rule 编译器识别某家医院还需要特定经验、额外培训或州级证明，并即时标红。",
+          "Middle office 只接手高风险例外 case，其余缺口通过自动提醒流直接回推给 clinician 补齐。"
+        ],
+        "metric": "递交前才发现缺件的 case 占比 / credentialing 周转时间 / 因规则不符导致的退件率"
+      },
+      {
+        "name": "经理看见哪种岗位正在吞掉利润和人效",
+        "hook": "如果管理层只能看 placements 总数，却看不到哪类订单最耗时、哪类客户规则最拖慢流程，就无法真正提升利润率。",
+        "workflow": [
+          "RosterLane 按 specialty、州别、facility 与 recruiter 团队展示从 sourcing 到递交的转化漏斗。",
+          "系统标出某些岗位虽然需求高，但总因 licensure 或 onboarding 规则导致提交慢、掉单高。",
+          "运营经理据此调整客户优先级、岗位策略与自动化模板，把低质量需求从团队注意力中剔除。"
+        ],
+        "metric": "cost per placement / submission-to-start conversion / 按客户或岗位类型拆分的毛利率"
+      }
+    ],
+    "stack": [
+      "先以 overlay 方式接在现有 ATS、VMS、短信与邮件工作流之上，不急着一开始就替代 system of record。",
+      "核心数据模型围绕 clinician、license packet、job order、facility rule、submission packet 与 placement timeline 构建，而不是停留在传统 candidate / requisition 表结构。",
+      "规则层优先做好州执照、医院特有材料、体检时效、经验年限和岗位限制等高频约束，把 healthcare staffing 的复杂性显式化。",
+      "LLM 主要用于消息草拟、资料摘要、缺口解释与 next-best-action 推荐；最终递交与关键合规判断仍保留人工确认。",
+      "移动端体验必须优先服务 clinician 自助完善资料与状态追踪，因为很多效率红利来自减少 recruiter 反复催材料。",
+      "商业验证先盯 fill rate、time-to-submit、cost per placement、recruiter span of control 与 credentialing rework rate，再决定是否向 payroll、timesheets 或 broader workforce management 扩张。"
+    ],
+    "risks": [
+      "医疗 staffing 涉及州执照、医院规则、背景审查与上岗合规，规则错一层就可能直接影响递交成功率和客户信任。",
+      "许多 staffing firm 已深度绑定 ATS/VMS 与现有运营习惯，如果切入点不够快见效，容易被视为又一个流程面板。",
+      "Clinician 是否愿意持续在白标入口维护资料，决定了 recruiter-less motion 能否成立；若自助完成率低，系统价值会被削弱。",
+      "不同 specialty、州别与客户的工作流差异很大，若过早追求全覆盖，产品会陷入复杂实现与长部署周期。",
+      "如果 AI 排序和推荐逻辑不透明，recruiter 可能不信任系统给出的优先级，最终又退回手工判断。"
+    ],
+    "next_steps": [
+      "先围绕 travel nursing 或 allied health 这类高频、高规则密度场景验证“submission-ready 漏斗 + rule check + autopilot packet”的最小闭环。",
+      "补强 recruiter 团队的可解释优先级面板，让每一次 job ranking 和 candidate 推荐都能说清楚依据，提升一线采纳率。",
+      "把 clinician 端做成真正的状态产品：不只是上传材料，而是随时知道自己距离哪类岗位还差什么，从而提高自助完成率。",
+      "第二阶段再接入客户成功与 account management 视图，把 fill difficulty、规则摩擦与利润结构反哺给销售和客户团队。"
+    ],
+    "_source_file": "2026-04-29-rosterlane.json"
+  },
+  {
     "date": "2026-04-28",
     "slug": "clipatlas",
     "title": "ClipAtlas",
