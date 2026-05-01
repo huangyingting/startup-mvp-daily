@@ -1,5 +1,109 @@
 [
   {
+    "date": "2026-05-01",
+    "slug": "claimlattice",
+    "title": "ClaimLattice",
+    "tagline": "把健康险过付挖掘从黑箱式追回，改成一条可解释、可迭代、可持续学习的支付完整性控制面。",
+    "category": "Healthcare / Health Plan Operations / Payment Integrity AI",
+    "potential_score": 87,
+    "summary": "Cohere Health 发布 Cohere Surface™，要用 agentic AI 重做 health plan data mining：让健康计划团队不再只拿到一份“追回了多少钱”的结果单，而是直接看见哪些规则在发现问题、为什么会发生过付、哪些根因在重复出现、哪些政策变化正在让旧规则失效。真正值得下注的机会，不是再做一个医疗分析仪表盘，也不是再包一层通用 AI，而是做一层更靠近 payment integrity 日常执行现场的“过付根因控制面”：让分析师、SIU、临床政策团队与追回运营在同一套工作台里，把‘哪里在漏钱、为什么漏、先修哪条规则、要不要升级人工复核’真正跑成闭环。",
+    "why_now": "这件事现在值得做，是因为支付完整性正在同时承受三股压力。第一，health plan 面对持续上涨的医疗成本、监管审查和利润压力，已经不能接受“月底追回一批钱就算完成任务”的粗放做法；他们要的是更早发现、更少重复犯错、更清楚的根因解释。第二，新闻里最强的信号不是 AI 本身，而是 Cohere 明确攻击了支付完整性里最痛的操作现实：规则开发慢、依赖 IT、服务商黑箱、同类问题反复出现，却没人真正积累内部知识。第三，健康险付款判断天然横跨 claims、benefits、contracts、policy docs 和 clinical documentation，这类“结构化 + 非结构化混合证据”正好进入了适合由垂直 AI 做成工作面的阶段。窗口期不在于再建一个更大的数据湖，而在于先把 payment integrity 团队每天真正要做的三件事产品化：找异常、解释原因、快速更新规则。",
+    "creative_edge": "ClaimLattice 的创意，不是把 claim 当成唯一对象，而是把“过付模式”做成一个可以被持续追踪和优化的 operational object。每一次异常发现都不只是一条追回线索，而会沉淀为一个带根因、证据链、适用规则、影响范围、复发概率和负责人状态的 pattern case。这样产品就不再只是做 post-pay analytics，而是变成一套持续学习的支付完整性记忆系统：它既帮助团队找到钱漏在哪里，也帮助他们建立“为什么这个洞会不断出现”的组织级理解。",
+    "problem": "今天很多 health plan 的 payment integrity 仍然停留在分裂且低透明度的工作方式里。分析师在一边写 SQL 和规则，临床或政策团队在另一边解释 benefits 和 medical policy，追回团队再用自己的流程处理 recoveries，外部服务商则常常只给结论不给方法。结果是，同一个过付问题可能在不同季度被重复抓到、重复升级、重复追回，却没有人能快速回答：这类问题到底为什么发生？是合同条款解释不一致、benefit policy 漂移、provider 行为改变、文档缺口，还是规则本身太粗？一旦团队想自己迭代规则，又常被 IT 排期、数据口径和跨团队沟通拖慢。更糟的是，很多组织看到的是“找回多少钱”，却看不到“未来还能少漏多少钱”。市场缺的不是更多 claim dashboard，而是一层把发现、解释、规则维护、升级复核与组织学习连到一起的 payment integrity 操作面。",
+    "mvp_thesis": "如果一个轻量但垂直的工作台能够把 claims、contracts、benefits、policies 与 clinical docs 织成同一条证据链，自动识别重复出现的过付模式，帮助团队在几小时内而不是几周内调整规则，并把高风险例外升级给人工复核，那么中大型 health plan 会愿意把它作为现有支付完整性项目之上的 AI control layer 接入。因为他们真正缺的不是再多一个分析系统，而是一个能把“找问题”升级成“持续减少重复性过付”的执行界面。",
+    "source": {
+      "title": "Cohere Health Brings Transparency to Health Plan Data Mining with Adaptive Claims Intelligence",
+      "url": "https://www.prnewswire.com/news-releases/cohere-health-brings-transparency-to-health-plan-data-mining-with-adaptive-claims-intelligence-302755325.html",
+      "publisher": "PR Newswire",
+      "published": "2026-04-28"
+    },
+    "news_signals": [
+      "新闻最关键的信号不是“AI 做 data mining”，而是明确点出当前 payment integrity 的结构性问题：规则开发慢、依赖 IT、供应商黑箱、同类错误反复出现。",
+      "Cohere Surface 强调 full visibility into why overpayments happen，说明买方开始要求“原因透明”和“可内部掌握的方法论”，而不是只买追回结果。",
+      "它把 claims、contracts、benefits、policies 和 clinical documentation 连接成统一 data fabric，证明这个场景的真实机会在于证据融合，而不是单表分析。",
+      "新闻明确提到规则可以在 hours 内构建和迭代、并由 agentic AI 持续运行与维护，这说明 payment integrity 的节奏正在从季度级项目转向日常运营。",
+      "domain-specific AI agents + human oversight 这一组合很重要，说明在高风险支付判断里，市场接受的是“AI 先跑、专家管例外”，而不是完全自动化。",
+      "与传统 contingency-based vendor 模式相比，新的价值主张已从“帮你追回钱”转向“帮你建立越来越强的内部支付完整性能力”。"
+    ],
+    "audiences": [
+      "负责 post-pay data mining、overpayment recovery 与 payment integrity program 的中大型 health plan 运营负责人、payment integrity leader 与 SIU 团队",
+      "每天处理规则维护、异常调查、根因分析与人工升级，但长期被 IT 排期和黑箱服务商拖慢的 claims integrity analyst / program manager",
+      "需要在临床政策、benefit 配置、合同条款与追回结果之间建立可解释闭环的 payer product、clinical policy 与 finance transformation 团队"
+    ],
+    "features": [
+      {
+        "name": "过付根因雷达",
+        "description": "把新发现与历史已知的 overpayment pattern 自动聚类，按根因类型、受影响 provider、金额暴露、复发频率与置信度排序，让团队先看最值得处理的洞，而不是先看最长的异常列表。"
+      },
+      {
+        "name": "规则工坊",
+        "description": "把传统需要分析师、IT 与政策团队反复来回的规则调整，改成一个可视化 rule builder：系统先给出候选逻辑、引用证据与潜在误伤范围，人工审核后一键发布到持续监控队列。"
+      },
+      {
+        "name": "证据织网台",
+        "description": "围绕单个 pattern case 自动串起 claim 明细、benefit 说明、合同条款、clinical documentation 与历史处理记录，生成可复核、可导出的 evidence bundle，减少跨系统查证与口头解释。"
+      },
+      {
+        "name": "升级与回收轨道",
+        "description": "对高金额、高争议或高监管敏感的案例自动分流到人工复核、provider 沟通或 recovery 队列，并持续记录追回状态、规则修复效果与同类问题是否复发。"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "分析师在周一上午就看见新的过付模式",
+        "hook": "真正昂贵的不是单次多付，而是同一种问题连续几周没人先发现。",
+        "workflow": [
+          "ClaimLattice 每晚跑完最新 claims、benefits 与政策更新后，在首页弹出一个“高频门诊注射编码与给付规则错配”的新 pattern case。",
+          "系统自动展示受影响 claim 数量、预计金额暴露、相关合同条款、相似历史案例，以及为何判断这不是一次性噪音。",
+          "分析师确认后，把该模式升级为正式规则候选，并安排当天内进入规则工坊做发布前模拟。"
+        ],
+        "metric": "新过付模式从首次出现到被识别的中位时长 / 每周新增高价值 pattern 数 / 高金额异常漏检率"
+      },
+      {
+        "name": "规则更新不再卡在 IT 队列里",
+        "hook": "很多支付完整性团队不是不知道该改什么，而是改一条规则要等两周。",
+        "workflow": [
+          "项目经理在规则工坊里选中一条旧规则，系统自动标注最近失效的原因：benefit 文案更新、provider billing 行为变化和一个例外条款未被覆盖。",
+          "产品给出三种修订逻辑，并模拟不同版本对历史 claims 的命中率、追回金额和潜在误伤量。",
+          "团队与临床政策负责人共同确认后发布新版规则，监控结果在 72 小时内回流到效果面板。"
+        ],
+        "metric": "规则从提出修改到上线的时长 / 规则发布后的命中准确率 / 误伤复核率"
+      },
+      {
+        "name": "支付完整性负责人终于能解释“为什么又漏了”",
+        "hook": "管理层不只想知道追回多少钱，更想知道为什么同类问题会反复出现。",
+        "workflow": [
+          "季度复盘时，负责人打开根因视图，看到近 90 天过付暴露被拆成合同解释偏差、政策漂移、文档缺口和 provider 行为变化四类。",
+          "系统显示每一类根因的金额、追回率、规则修复状态，以及哪些模式虽然追回成功但仍在持续复发。",
+          "团队据此决定把预算先投向高复发且证据链完整的两类模式，并暂停低价值、争议大的追回动作。"
+        ],
+        "metric": "重复性过付问题的季度复发率 / 每 100 万美元暴露对应的人工调查工时 / 根因已知案件占比"
+      }
+    ],
+    "stack": [
+      "先作为 overlay 接入现有 claims warehouse、payment integrity vendor 输出、case management 与 policy repository，而不是要求 health plan 一次性替换整套核心系统。",
+      "核心数据模型围绕 claim event、policy version、benefit clause、contract term、pattern case、recovery action 与 review outcome 构建，让系统理解的是“模式如何形成”，而不只是“单条 claim 是否异常”。",
+      "RAG 与文档解析层重点服务合同、benefit 手册、medical policy 和临床文档的证据抽取，但最终规则执行仍走可审计的 deterministic engine。",
+      "Agent 层拆成 pattern discovery、rule suggestion、evidence stitching 与 drift monitoring 四类专用 agent，避免一个大而泛的助手承担全部职责。",
+      "人机协作上保留 analyst review、clinical policy approval 与 high-risk escalation 三道人工闸门，以降低错误追回和监管风险。",
+      "效果层持续追踪 pattern 复发率、规则维护周期、追回净收益与 provider dispute rate，让团队判断是该继续追、还是优先修规则。"
+    ],
+    "risks": [
+      "若早期接入数据质量差、合同版本不齐或 benefit 文案缺失，系统可能能找异常却很难讲清根因。",
+      "payment integrity 场景里 false positive 代价很高，若规则建议过于激进，容易引发 provider dispute 和内部信任问题。",
+      "Health plan 已有复杂的既有供应商关系，产品必须证明自己不是又一层重复工具，而是能明显提升透明度与迭代速度。",
+      "不同 LOB、州法规和合同模板差异极大，若过早追求全覆盖，规则与证据模型会迅速失控。",
+      "如果产品只能支持 post-pay recovery，而不能帮助团队减少未来重复性过付，长期价值会被压回传统追款工具的估值逻辑。"
+    ],
+    "next_steps": [
+      "先聚焦 2-3 类高频且证据较完整的 overpayment pattern，例如门诊注射、重复给付与授权错配，验证根因解释与规则迭代闭环。",
+      "把规则工坊补强为真正的 pre-deploy simulator，让团队在上线前直观看到追回收益、误伤概率与 provider 争议风险。",
+      "把 recovery outcome 反哺到 pattern case 上，形成“哪些模式追回快、哪些模式该先修规则而不是追钱”的经营视图。",
+      "第二阶段再把 provider communication、appeal handling 与 audit package 自动生成接进来，扩展成完整的 payment integrity operating system。"
+    ],
+    "_source_file": "2026-05-01-claimlattice.json"
+  },
+  {
     "date": "2026-04-30",
     "slug": "tuitionbridge",
     "title": "TuitionBridge",
