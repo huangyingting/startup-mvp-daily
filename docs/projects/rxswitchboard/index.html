@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RxSwitchboard · Startup MVP Daily</title>
+    <meta name="description" content="把开方瞬间从“默认发去某家药房”改成一个可比较、可解释、可转化的处方履约控制面。" />
+    <meta property="og:title" content="RxSwitchboard · Startup MVP Daily" />
+    <meta property="og:description" content="把开方瞬间从“默认发去某家药房”改成一个可比较、可解释、可转化的处方履约控制面。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://huangyingting.github.io/startup-mvp-daily/projects/rxswitchboard/" />
+    <link rel="canonical" href="https://huangyingting.github.io/startup-mvp-daily/projects/rxswitchboard/" />
+    <link rel="stylesheet" href="/startup-mvp-daily/assets/styles.css" />
+  </head>
+  <body>
+    
+    <main class="page-shell">
+      <a class="top-link" href="/startup-mvp-daily/">← 返回首页</a>
+      <section class="hero-card hero-card--project">
+        <p class="eyebrow">2026-05-02 · Healthcare Infrastructure / Pharmacy Access / AI Workflow</p>
+        <h1>RxSwitchboard</h1>
+        <p class="lede">把开方瞬间从“默认发去某家药房”改成一个可比较、可解释、可转化的处方履约控制面。</p>
+        <div class="score-pill">潜力评分 88/100</div>
+        <div class="hero-grid">
+          <article>
+            <p class="label">新闻来源</p>
+            <h2>Photon Raises $16M Series A to Give Patients Control Over Their Prescriptions and Bring Transparency to Pharmacy</h2>
+            <p>Photon Health 宣布完成 1600 万美元 Series A，试图重做一个被电子处方系统长期忽略的关键瞬间：医生开出药后，患者通常必须当场指定药房，但此时既看不到价格、也不知道库存、配送时效或是否被保险覆盖。真正值得下注的机会，不是再做一个线上药房，也不是再做一个患者端比价 App，而是做一层更靠近“处方真正能不能被顺利履约”的路由操作面：让患者、诊所与 health system 在处方发出之前，就把去哪家药房、为什么去、如果缺货该怎么切换、如何减少 abandoned fill 说清楚并直接执行。</p>
+            <a class="inline-link" href="https://www.prnewswire.com/news-releases/photon-raises-16m-series-a-to-give-patients-control-over-their-prescriptions-and-bring-transparency-to-pharmacy-302754817.html" target="_blank" rel="noreferrer">查看原文 ↗</a>
+          </article>
+          <article>
+            <p class="label">为什么值得做</p>
+            <p>这件事现在值得做，是因为处方链路里最贵的摩擦已经从“能不能电子发送”变成“发出去之后能不能顺利拿到药”。第一，新闻明确点出电子处方解决了传输，却没有解决决策：患者仍被迫在信息不足时即时选药房，后续再靠转单、电话与人工跟进补救。第二，AI 终于能把药房网络、福利结构、formulary、库存和配送能力这些碎片化数据在秒级拼到一起，使“开方时给出可执行推荐”变得现实。第三，健康系统和诊所越来越重视 prescription leakage、依从性和患者留存，说明处方去向已不只是行政动作，而是一个直接影响收入与治疗结果的运营入口。窗口期不在于再做一层药品目录，而在于先把 point-of-prescribing 这一步重做成一个实时决策界面。</p>
+            <p class="creative-edge">RxSwitchboard 的创意，不是把“处方”当成一张静态单据，而是把“处方履约路径”当成一个可以被持续优化的 operational object。每一张处方都不只是发往某家药房，而是带着价格透明度、库存确定性、保险匹配度、履约时延、患者偏好与回填状态的一条 route。这样产品就不只是帮助患者选药房，而是让诊所和 health system 终于能经营‘处方从写下到真正拿到药’这一段原本极度黑箱的链路。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="section-card">
+          <p class="eyebrow">Problem</p>
+          <h2>要解决什么问题？</h2>
+          <p>今天大多数处方工作流在真正最影响结果的地方仍然很粗糙。医生把药开出来，患者被要求立刻说出一家药房名字，但此时不知道哪家更便宜、哪家有货、哪家离自己更近、哪家支持配送、哪家最可能被保险顺利处理。处方一旦被发走，错误选择就开始制造连锁成本：患者打电话要求转药房，诊所前台处理 reroute，药房处理取消和重发，健康系统则看着处方流失到体系外。更糟的是，团队很少能系统回答：这张药为什么没被 fill？是价格太高、库存缺失、prior auth 卡住、保险不覆盖，还是患者只是根本没收到合适选项？市场缺的不是更多 pharmacy search，而是一层把推荐、发送、切换、补救和回传串起来的 prescription fulfillment 操作面。</p>
+          <h3>目标用户</h3>
+          <ul class="bullet-list"><li>在门诊、专科诊所、数字医疗平台或 health system 中负责 prescribing workflow、patient access 与 refill 效率的产品负责人、运营负责人和临床信息化团队</li><li>需要减少 prescription leakage、提高院内药房转化并降低前台/护士 reroute 电话负担的 health system pharmacy leader 与 ambulatory operations 团队</li><li>经常处理高价药、慢病长期用药或易受 prior auth 与库存影响处方的数字健康、virtual care 与 specialty care 团队</li></ul>
+        </article>
+
+        <article class="section-card">
+          <p class="eyebrow">Signals</p>
+          <h2>来自新闻的关键信号</h2>
+          <ul class="bullet-list"><li>新闻明确指出 e-prescribing 解决了“处方能发出去”，却没有解决“患者该发去哪、能不能顺利拿到药”的决策问题。</li><li>Photon 把实时价格、库存、便利性与 coverage 放进开方瞬间，说明药房选择正从后台行政动作变成前台可产品化的决策层。</li><li>公司强调 AI 不是营销点，而是处理 pharmacy network、benefit structure 与 formulary 碎片数据的底层引擎，这说明真正难点在于路由计算，而不是前端 UI。</li><li>新闻提到 health system 可以把 prescription 变成 patient engagement touchpoint，并提升 in-house pharmacy utilization，说明买方价值已不只在患者体验，也直接连到收入与留存。</li><li>Photon 同时布局 prior authorization、clinical decision support 与 patient support workflows，说明处方履约不是单点搜索功能，而是一条可持续扩展的工作流基础设施。</li><li>“更少 abandoned prescriptions、更少 reroutes、更少电话”这一组结果非常关键，表明该场景的 ROI 可以直接用履约率、人工工时和处方流失来衡量。</li></ul>
+        </article>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MVP</p>
+            <h2>这个原型包含什么</h2>
+          </div>
+          <p>如果一个轻量但垂直的路由工作台能在开方瞬间汇总药房价格、库存、保险与配送信号，为患者和诊所生成最合适的履约路径，并在履约失败时自动给出切换与补救动作，那么诊所、数字健康平台与 health system 会愿意把它接在现有 e-prescribing 之上。因为他们真正缺的不是另一个药房目录，而是一个能减少 abandoned fill、降低转单人工成本，并提升 in-house pharmacy capture 的执行界面。</p>
+        </div>
+        <div class="card-grid">
+        <article class="info-card">
+          <h3>开方即路由面板</h3>
+          <p>在医生签出处方前，实时展示候选药房的价格区间、库存把握度、配送/自取时效、保险适配度与患者偏好，让“去哪家药房”从口头选择变成可比较的履约决策。</p>
+        </article>
+        
+        <article class="info-card">
+          <h3>处方失效补救器</h3>
+          <p>一旦处方因缺货、价格过高、拒付或患者未行动而卡住，系统自动生成 reroute 建议、患者沟通模板与下一优先药房路径，把补救从人工追单改成半自动运营。</p>
+        </article>
+        
+        <article class="info-card">
+          <h3>药房捕获收益板</h3>
+          <p>围绕每张处方追踪是否被院内药房承接、为什么流失、在哪一步流失，以及不同渠道的 fill rate、周转时长与人工介入成本，帮助 health system 把 prescription leakage 变成可经营指标。</p>
+        </article>
+        
+        <article class="info-card">
+          <h3>履约证据时间轴</h3>
+          <p>把发送、拒付、转单、prior auth、患者确认、配送与取药等事件串成同一条时间轴，让诊所、药房与患者支持团队共享同一份上下文，而不是靠电话和消息补记忆。</p>
+        </article>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Interactive demo</p>
+            <h2>三种最先能打动市场的使用场景</h2>
+          </div>
+          <p>点击不同场景，查看从体验入口到北极星指标的 MVP 路线。</p>
+        </div>
+        
+    <div class="scenario-shell">
+      <div class="scenario-tabs"><button class="scenario-tab" data-tab-target="#rxswitchboard-panel-0" aria-pressed="true" id="rxswitchboard-scenario-0">门诊医生在开药时直接给出最稳妥路径</button><button class="scenario-tab" data-tab-target="#rxswitchboard-panel-1" aria-pressed="false" id="rxswitchboard-scenario-1">健康系统减少处方流失到院外药房</button><button class="scenario-tab" data-tab-target="#rxswitchboard-panel-2" aria-pressed="false" id="rxswitchboard-scenario-2">患者支持团队处理卡住处方而不是盲目追单</button></div>
+      <div class="scenario-panels">
+            <section class="scenario-panel" id="rxswitchboard-panel-0" >
+              <p class="eyebrow">Use case</p>
+              <h3>门诊医生在开药时直接给出最稳妥路径</h3>
+              <p class="scenario-hook">真正影响依从性的，往往不是处方写没写，而是患者离开诊室前有没有拿到一个可执行选择。</p>
+              <ul class="workflow-list"><li>医生在 EHR 中开出一款慢病药物，RxSwitchboard 在签发前弹出三个候选药房，并标记每个选项的预计自付金额、库存概率和最快履约方式。</li><li>患者现场选择“今晚能送达且自付最低”的方案，系统立即把处方路由过去，并把确认短信与价格说明发送给患者。</li><li>如果 2 小时内药房返回库存不足，系统自动切换到次优选项并通知前台，无需患者重新打电话要求转单。</li></ul>
+              <div class="metric-pill">北极星指标：处方从开出到成功送达首家药房的成功率 / 首次路由命中率 / abandoned fill rate</div>
+            </section>
+            
+            <section class="scenario-panel" id="rxswitchboard-panel-1" hidden>
+              <p class="eyebrow">Use case</p>
+              <h3>健康系统减少处方流失到院外药房</h3>
+              <p class="scenario-hook">很多院内药房不是竞争不过外部，而是在推荐逻辑里根本没有被公平呈现。</p>
+              <ul class="workflow-list"><li>pharmacy operations 负责人打开收益板，看到某专科近 30 天院内捕获率下降，主要原因是高价药在 prior auth 阶段缺少透明引导。</li><li>团队为该药品类别配置新的路由规则：若院内药房库存稳定且可协助 prior auth，则优先展示院内履约，并同步说明预计处理时长。</li><li>两周后系统对比新旧规则，显示院内 capture 上升、转单电话下降，并把最常见流失原因回传给门诊团队。</li></ul>
+              <div class="metric-pill">北极星指标：in-house pharmacy capture rate / prescription leakage 降幅 / 每百张处方相关电话工时</div>
+            </section>
+            
+            <section class="scenario-panel" id="rxswitchboard-panel-2" hidden>
+              <p class="eyebrow">Use case</p>
+              <h3>患者支持团队处理卡住处方而不是盲目追单</h3>
+              <p class="scenario-hook">患者支持最怕的不是问题复杂，而是根本不知道这张药卡在哪一环。</p>
+              <ul class="workflow-list"><li>患者支持专员打开一张未完成处方，时间轴显示：首家药房拒付、患者未点击第二方案、prior auth 文档仍待补齐。</li><li>系统自动生成两条动作：给患者发一条解释价格差异和替代药房选择的短信；给诊所 staff 发一个缺失文件提醒。</li><li>专员只处理高风险个案，其余标准化补救由系统触发，最终把恢复 fill 的结果回写到处方路由模型中。</li></ul>
+              <div class="metric-pill">北极星指标：卡住处方恢复 fill 的比例 / 人工介入前解决率 / 平均补救时长</div>
+            </section>
+            </div>
+    </div>
+    
+      </section>
+
+      <section class="content-grid">
+        <article class="section-card">
+          <p class="eyebrow">Stack</p>
+          <h2>当前技术栈</h2>
+          <ul class="bullet-list"><li>先作为现有 e-prescribing / EHR 工作流上的 overlay，而不是替换核心开方系统；优先通过 API 或 SMART on FHIR 风格嵌入医生端界面。</li><li>底层数据层围绕 prescription route、pharmacy node、coverage signal、inventory signal、patient preference、prior auth state 与 fill outcome 建模，让系统理解的是“路径是否可履约”，而不只是药房列表。</li><li>实时决策层整合药房网络、PBM / formulary 信息、配送能力与历史履约反馈，给出 route ranking，并保留 deterministic routing rule 以满足合规与审计需要。</li><li>患者沟通层通过短信、邮件或 app deep link 承接确认、切换和补件动作，避免诊所把大量解释工作继续留在人工电话里。</li><li>运营分析层持续追踪首发成功率、reroute 率、fill turnaround、院内捕获率与流失原因，为 health system 和数字健康平台提供经营视角。</li><li>AI 主要用于碎片化信号归一、失败原因分类与下一步动作建议，但最终发送、切换和高风险药事判断保留人工或规则闸门。</li></ul>
+        </article>
+        <article class="section-card">
+          <p class="eyebrow">Risks</p>
+          <h2>主要风险</h2>
+          <ul class="bullet-list"><li>不同药房网络、PBM 和保险数据源的实时性参差不齐，若价格或库存信号不稳定，产品可信度会迅速受损。</li><li>处方路由直接影响患者健康体验，若推荐错误导致延迟取药，诊所和 health system 会非常谨慎地扩大使用范围。</li><li>既有 e-prescribing 基础设施和供应商生态复杂，产品必须证明自己是增强层而不是额外打断临床流程的又一个弹窗。</li><li>若早期只做比价而不能真正闭环 reroute、prior auth 与履约回填，容易退化成一个价值有限的 consumer widget。</li><li>院内药房优先展示涉及患者利益与合规边界，产品需要把推荐逻辑做得可解释，避免被视为不透明导流。</li></ul>
+        </article>
+      </section>
+
+      <section class="section-card">
+        <p class="eyebrow">Next steps</p>
+        <h2>如果继续迭代，接下来做什么</h2>
+        <ul class="bullet-list"><li>先聚焦 2-3 个高频高痛处方场景，例如慢病长期用药、 specialty 药品与配送敏感药物，验证首发命中率和 reroute 降幅。</li><li>把 prior auth 状态接入时间轴，形成“开方—审批—路由—履约”单对象闭环，减少团队在多个系统中拆上下文。</li><li>为 health system 补强 prescription leakage 归因与规则实验能力，帮助运营团队验证院内药房优先策略是否真的提升 fill 与留存。</li><li>第二阶段再把 refill 建议、替代疗法推荐与 adherence 风险提醒接进来，扩展成 medication access operating system。</li></ul>
+      </section>
+    </main>
+    
+    <script src="/startup-mvp-daily/assets/app.js" defer></script>
+  </body>
+</html>
